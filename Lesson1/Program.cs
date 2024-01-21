@@ -3,7 +3,7 @@
 const string Title1 = "1 КОФЕ СТАНДАРТНЫЙ";
 const double Price1 = 69.00;
 const double Number1 = 1.00;
-const double Amount1 = 69.00
+const double Amount1 = 69.00;
 Console.WriteLine("Название\t\tЦена\tКол.\tСумма");
 Console.WriteLine($"{Title1}\t{Price1}\t{Number1}\t{Amount1}");
 
