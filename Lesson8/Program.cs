@@ -47,6 +47,30 @@
 //int x= int.Parse(Console.ReadLine());
 //Console.WriteLine(x-x%100/10*10);
 
+//int firstNum = 15;
+//firstNum = firstNum + 6;
+//int secondNum = -firstNum;
+//int result = -firstNum - 2 * secondNum;
+//Console.WriteLine(result);
+
+decimal butter = 150;
+decimal bread = 50;
+decimal tea = 40;
+Console.Write("Введите количество монет: ");
+decimal money= decimal.Parse(Console.ReadLine());
+Console.WriteLine($"Хлеб:{bread}\nМасло:{butter}\nЧай:{tea}");
+Console.Write("Введите количество хлеба:");
+int n1 = int.Parse(Console.ReadLine());
+Console.Write("Введите количество масла:");
+int n2 = int.Parse(Console.ReadLine());
+Console.Write("Введите количество чая:");
+int n3 = int.Parse(Console.ReadLine());
+Console.WriteLine($"{"Хлеб",-10} {bread,-8} {n1,-8} {n1 * bread}");
+Console.WriteLine($"Масло {butter,-10} {n2,-8} {n2 * butter}");
+Console.WriteLine($"Чай {tea,-10} {n3,-8} {n3 * bread}");
+Console.WriteLine($"Итого \t {n1 * bread + n2 * butter + n3 * tea}");
+
+
 
 
 
