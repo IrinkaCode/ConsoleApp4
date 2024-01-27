@@ -66,10 +66,10 @@ int n2 = int.Parse(Console.ReadLine());
 Console.Write("Введите количество чая:");
 int n3 = int.Parse(Console.ReadLine());
 Console.WriteLine($"{"Хлеб",-10} {bread,-8} {n1,-8} {n1 * bread}");
-Console.WriteLine($"Масло {butter,-10} {n2,-8} {n2 * butter}");
-Console.WriteLine($"Чай {tea,-10} {n3,-8} {n3 * bread}");
-Console.WriteLine($"Итого \t {n1 * bread + n2 * butter + n3 * tea}");
-
+Console.WriteLine($"{"Масло",-10} {butter,-8} {n2,-8} {n2 * butter}");
+Console.WriteLine($"{"Чай",-10} {tea,-8} {n3,-8} {n3 * bread}");
+Console.WriteLine($"Итого\t{n1 * bread + n2 * butter + n3 * tea}");
+Console.WriteLine(money - (n1 * bread + n2 * butter + n3 * tea)); 
 
 
 
