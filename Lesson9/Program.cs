@@ -40,12 +40,20 @@
 //Console.WriteLine(N % 4 == 0 && N % 10 != 0);
 
 //Console.Write("Введите x:");
-//Console.Write("Введите y:");
 //double x = double.Parse(Console.ReadLine());
+//Console.Write("Введите y:");
 //double y = double.Parse(Console.ReadLine());
 //Console.WriteLine((x >= 2) && (y >= 1 || y <= -1.5));
+
+
 
 //Console.WriteLine("Введите y:");
 //double y=double.Parse(Console.ReadLine());
 //Console.WriteLine((y >= 1) || (y > -4) && (y < -3));
 
+Console.Write("Введите x:");
+double x = double.Parse(Console.ReadLine());
+Console.Write("Введите y:");
+double y = double.Parse(Console.ReadLine());
+if((x >= 2) && (y >= 1 || y <= -1.5)) Console.WriteLine("Попал");
+else Console.WriteLine("Не попал");
