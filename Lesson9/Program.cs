@@ -1,6 +1,6 @@
-﻿//int a = 16;
-//int b = 7;
-//Console.WriteLine(a&b);
+﻿//int a = 8;
+//int b = 3;
+//Console.WriteLine(a & b);
 
 //Console.Write("Введите число:");
 //int a =int.Parse(Console.ReadLine());
@@ -51,9 +51,35 @@
 //double y=double.Parse(Console.ReadLine());
 //Console.WriteLine((y >= 1) || (y > -4) && (y < -3));
 
-Console.Write("Введите x:");
-double x = double.Parse(Console.ReadLine());
-Console.Write("Введите y:");
-double y = double.Parse(Console.ReadLine());
-if((x >= 2) && (y >= 1 || y <= -1.5)) Console.WriteLine("Попал");
-else Console.WriteLine("Не попал");
+//Console.Write("Введите x:");
+//double x = double.Parse(Console.ReadLine());
+//Console.Write("Введите y:");
+//double y = double.Parse(Console.ReadLine());
+//if((x >= 2) && (y >= 1 || y <= -1.5)) Console.WriteLine("Попал");
+//else Console.WriteLine("Не попал");
+
+//тема2 задача 2
+//Console.WriteLine(256 >> 2);
+//Console.WriteLine(256 << 2);
+
+//задача 1
+
+//Console.WriteLine(Convert.ToString((long)264895468854, 2));
+//Console.WriteLine(Convert.ToString(~(long)264895468854, 2));
+//Console.WriteLine(Convert.ToString((short)256, 2));
+//Console.WriteLine(Convert.ToString(~(short)256, 2));
+
+int x = 289;
+int y = 2487;
+x += y;
+Console.WriteLine(x);
+
+int a = 144;
+int b= 2487;
+a+= b;
+Console.WriteLine(b);
+
+int c= 36274;
+int d = 2487;
+c += d;
+Console.WriteLine(d);
