@@ -83,10 +83,10 @@ Console.WriteLine($"{"Хлеб",-10} {bread,-8} {n1,-8} {n1 * bread}");
 Console.WriteLine($"{"Масло",-10} {butter,-8} {n2,-8} {n2 * butter}");
 Console.WriteLine($"{"Чай",-10} {tea,-8} {n3,-8} {n3 * bread}");
 Console.WriteLine($"{"Итого",-10}{n1 * bread + n2 * butter + n3 * tea}");
-Console.WriteLine($"{"Сдача",-10}{money - (n1 * bread + n2 * butter + n3 * tea)}");
 
-if (money < n1 * bread + n2 * butter + n3 * tea) 
-{
+
+if (money < n1 * bread + n2 * butter + n3 * tea)
     Console.WriteLine($"На вашем счету недостаточно средств");
-}
+else
+    Console.WriteLine($"{"Сдача",-10}{money - (n1 * bread + n2 * butter + n3 * tea)}");
 
