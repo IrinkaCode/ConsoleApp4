@@ -81,15 +81,15 @@
 //int d = 2487;
 //Console.WriteLine(c /= d);
 
-int a = 289;
-int b = 144;
-int c = 36274;
-int d = 2487;
-Console.WriteLine(a += d); //289+2487=2776
-Console.WriteLine(b += d); //144+2487=2631
-Console.WriteLine(c += d); //36274+2487=38761
-Console.WriteLine(a *= d); //289*2487=718743
-Console.WriteLine(b *= d); //144*2487=358128
-Console.WriteLine(c *= d); //36274*2487=90213438
-Console.WriteLine(a -= d);
-Console.WriteLine(c -= d);
+//int a = 289;
+//int b = 144;
+//int c = 36274;
+//int d = 2487;
+//Console.WriteLine(a += d); //289+2487=2776
+//Console.WriteLine(b += d); //144+2487=2631
+//Console.WriteLine(c += d); //36274+2487=38761
+//Console.WriteLine(a *= d); //289*2487=718743
+//Console.WriteLine(b *= d); //144*2487=358128
+//Console.WriteLine(c *= d); //36274*2487=90213438
+//Console.WriteLine(a -= d);
+//Console.WriteLine(c -= d);
