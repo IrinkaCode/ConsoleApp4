@@ -69,17 +69,22 @@
 //Console.WriteLine(Convert.ToString((short)256, 2));
 //Console.WriteLine(Convert.ToString(~(short)256, 2));
 
-int x = 289;
-int y = 2487;
-x += y;
-Console.WriteLine(x);
+//int x = 289;
+//int y = 2487;
+//Console.WriteLine(x += y);
 
-int a = 144;
-int b= 2487;
-a+= b;
-Console.WriteLine(b);
+//int a = 144;
+//int b = 2487;
+//Console.WriteLine(a *= b);
 
-int c= 36274;
+//int c = 36274;
+//int d = 2487;
+//Console.WriteLine(c /= d);
+
+int a = 289;
+int b = 144;
+int c = 36274;
 int d = 2487;
-c += d;
-Console.WriteLine(d);
+int res = a + d;
+Console.WriteLine(res);
+
