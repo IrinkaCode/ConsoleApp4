@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\..\OneDrive\Рабочий стол\домашка\Тема 9.Урок 1..txt" Link="Тема 9.Урок 1..txt" />
+  </ItemGroup>
+
 </Project>
