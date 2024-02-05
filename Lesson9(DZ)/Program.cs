@@ -61,20 +61,4 @@ int d = 2487;
 Console.WriteLine(a += d); //289+2487=2776
 Console.WriteLine(b += d); //144+2487=2631
 Console.WriteLine(c += d); //36274+2487=38761
-Console.WriteLine(a *= d); //289*2487=718743
-Console.WriteLine(b *= d); //144*2487=358128
-Console.WriteLine(c *= d); //36274*2487=90213438
-Console.WriteLine(c -= d);
-Console.WriteLine(c /= d);
 
-//int x = 289;
-//int y = 2487;
-//Console.WriteLine(x += y);
-
-//int a = 144;
-//int b = 2487;
-//Console.WriteLine(a *= b);
-
-//int c = 36274;
-//int d = 2487;
-//Console.WriteLine(c /= d);
