@@ -190,6 +190,7 @@
 //4.110
 Console.Write("Введите номер масти: ");
 int m = int.Parse(Console.ReadLine());
+Console.Write("Введите номер достоинства карты: ");
 int k = int.Parse(Console.ReadLine());
 
 switch (m)
@@ -203,15 +204,15 @@ switch (m)
     case 9:
         Console.Write("девять ");break;
     case 10:
-        Console.WriteLine("десять ");break;
+        Console.Write("десять ");break;
     case 11:
-        Console.WriteLine("Валет ");break;
+        Console.Write("Валет ");break;
     case 12:
-        Console.WriteLine("Дама "); break;
+        Console.Write("Дама "); break;
     case 13:
-        Console.WriteLine("Король "); break;
+        Console.Write("Король "); break;
     case 14:
-        Console.WriteLine("Туз "); break;
+        Console.Write("Туз "); break;
 
 }
 switch(k)
