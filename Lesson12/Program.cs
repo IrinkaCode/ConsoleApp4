@@ -188,29 +188,30 @@
 //}
 
 //4.110
-Console.WriteLine("Введите номер масти: ");
-int m=int.Parse(Console.ReadLine());
-int k=int.Parse(Console.ReadLine());
+Console.Write("Введите номер масти: ");
+int m = int.Parse(Console.ReadLine());
+int k = int.Parse(Console.ReadLine());
+
 switch (m)
 {
     case 6:
         Console.Write("шесть ");break;
     case 7:
-        Console.Write("семь");break;
+        Console.Write("семь ");break;
     case 8:
-        Console.Write("восемь");break;
+        Console.Write("восемь ");break;
     case 9:
-        Console.Write("девять");break;
+        Console.Write("девять ");break;
     case 10:
-        Console.WriteLine("десять");break;
+        Console.WriteLine("десять ");break;
     case 11:
-        Console.WriteLine("Валет");break;
+        Console.WriteLine("Валет ");break;
     case 12:
-        Console.WriteLine("Дама"); break;
+        Console.WriteLine("Дама "); break;
     case 13:
-        Console.WriteLine("Король"); break;
+        Console.WriteLine("Король "); break;
     case 14:
-        Console.WriteLine("Туз"); break;
+        Console.WriteLine("Туз "); break;
 
 }
 switch(k)
@@ -218,5 +219,9 @@ switch(k)
     case 1:
         Console.WriteLine("Пики");break;
     case 2:
-        Console.WriteLine("");
+        Console.WriteLine("Трефы");break;
+    case 3:
+        Console.WriteLine("Бубны"); break;
+    case 4:
+        Console.WriteLine("Червы"); break;
 }
