@@ -108,7 +108,7 @@
 //}
 
 //2
-//Random ra/ndom = new Random();
+//Random random = new Random();
 //int year = random.Next(1900, 2024);
 //Console.WriteLine(year);
 //string result = (year % 4 == 0) ? "да" : "нет";
