@@ -164,24 +164,35 @@
 //else  Console.WriteLine("Поражение");
 
 //2
+//Console.Write("Введите номер текущего месяца: ");
+//int month = int.Parse(Console.ReadLine());
 
-Console.Write("Введите номер текущего месяца: ");
-int month = int.Parse(Console.ReadLine());
-Console.Write("Введите среднюю температуру:");
-int temp = int.Parse(Console.ReadLine());
+//if (month == 1) Console.WriteLine("Январь");
+//else if (month == 2) Console.WriteLine("Февраль");
+//else if (month == 3) Console.WriteLine("Март");
+//else if (month == 4) Console.WriteLine("Апрель");
+//else if (month == 5) Console.WriteLine("Май");
+//else if (month == 6) Console.WriteLine("Июнь");
+//else if (month == 7) Console.WriteLine("Июль");
+//else if (month == 8) Console.WriteLine("Август");
+//else if (month == 9) Console.WriteLine("Сентябрь");
+//else if (month == 10) Console.WriteLine("Октябрь");
+//else if (month == 11) Console.WriteLine("Ноябрь");
+//else if (month == 12) Console.WriteLine("Декабрь");
 
-if (month == 1) Console.WriteLine("Январь");
-else if (month == 2) Console.WriteLine("Февраль");
-else if (month == 3) Console.WriteLine("Март");
-else if (month == 4) Console.WriteLine("Апрель");
-else if (month == 5) Console.WriteLine("Май");
-else if (month == 6) Console.WriteLine("Июнь");
-else if (month == 7) Console.WriteLine("Июль");
-else if (month == 8) Console.WriteLine("Август");
-else if (month == 9) Console.WriteLine("Сентябрь");
-else if (month == 10) Console.WriteLine("Октябрь");
-else if (month == 11) Console.WriteLine("Ноябрь");
-else if (month == 12) Console.WriteLine("Декабрь");
+//if (month > 12 || month == 0) Console.WriteLine("Такого месяца нет");
 
-if (month == 12 && month == 1 && month == 2 || temp>0) Console.WriteLine("Дождливая зима");
+
+//Console.Write("Введите среднюю температуру:");
+//int temp = int.Parse(Console.ReadLine());
+//{
+//    if (month <= 2 || month == 12)
+//    {
+//        if (temp > 0) Console.WriteLine("Дождивая зима");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Классная погода");
+//    }
+//}
 
