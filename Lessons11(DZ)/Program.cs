@@ -256,6 +256,8 @@
 
 
 //1
+using System.Security.Cryptography;
+
 Random random = new Random();
 int month = random.Next(1, 4);
 Console.WriteLine(month);
@@ -264,15 +266,17 @@ if (month == 1) Console.WriteLine("Январь");
 else if (month == 2) Console.WriteLine("Февраль");
 else if (month == 3) Console.WriteLine("Март");
 Console.Write("Угадайте сколько дней в этом месяце? ");
-int userDay = int.Parse(Console.ReadLine());
-
-
 int day = int.Parse(Console.ReadLine());
-if (month == 1) day = 31;
-else if (month == 2) day = 28;
-else if (month == 3) day = 31;
 
-if (month == userDay) Console.WriteLine("Победа");
-else if (month != userDay) Console.Write($"Не правильно.В этом месяце {day} дней");
+if (month == 1 && day == 31) Console.WriteLine("Победа");
+else Console.WriteLine("Не правильно.В этом месяце 31 день");
+if (month == 2 && day == 28) Console.WriteLine("Победа");
+else Console.WriteLine("Не правильно.В этом месяце 28 дней");
+if (month == 3 && day == 31) Console.WriteLine("Победа");
+else Console.WriteLine("Не правильно.В этом месяце 31 день");
+
+
+//if (month == userDay) Console.WriteLine("Победа");
+//else if (month != userDay) Console.Write($"Не правильно.В этом месяце {day} дней");
 
 
