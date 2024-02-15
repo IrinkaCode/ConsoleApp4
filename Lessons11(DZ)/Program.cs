@@ -196,3 +196,45 @@
 //    }
 //}
 
+
+//Тема 11 Урок 4
+
+//Console.Write("Введите ваш возраст: ");
+//int age=int.Parse(Console.ReadLine());
+//if (age < 18) Console.WriteLine("Вы слишком молоды для участия в выборах");
+//else if (age >= 18 && age <= 35) Console.WriteLine("Вы можете учавствовать в выборах в качестве депутата");
+//else if (age >= 36 && age <= 65) Console.WriteLine("Вы можете учавствовать в выборах в качестве кандидата в президенты");
+//else Console.WriteLine("Ваш возраст слишком велик для участия в выборах");
+
+//Console.WriteLine("За кого вы будете болеть,если проиграете или не будете допущены к участию в выборах?\n" + "1- Незнайка\n" + "2-Лунтик\n" + "3-Карлсон\n" + "4-Дядя Федор\n");
+//Console.Write("Введите номер кандидата: ");
+//int number = int.Parse(Console.ReadLine());
+//if (number == 1) Console.WriteLine("Незнайка - А у тебя в животе арбуз вырастет!!!");
+//else if (number == 2) Console.WriteLine("Лунтик - Жизнь - это одно большое приключение");
+//else if (number == 3) Console.WriteLine("Карлсон - Спокойствие!Только спокойствие!");
+//else if (number == 4) Console.WriteLine("Дядя Федор - Чтобы продать что то ненужное,надо купить что то нужное,а у нас денег нет");
+
+
+//Доп.задание
+//1
+Random random = new Random();
+int month = random.Next(1, 4);
+Console.WriteLine(month);
+Console.WriteLine("Введите число месяца от 1 до 3:\n" + "1-Январь\n" + "2-Февраль\n" + "3-Март\n");
+int userNumber = int.Parse(Console.ReadLine());
+Console.Write("Угадайте сколько дней в этом месяце? ");
+int userDay = int.Parse(Console.ReadLine());
+
+
+//if (month == 1 && month == 3) Console.WriteLine("31");
+//else if (month == 2) Console.WriteLine("28");
+string day =(Console.ReadLine());
+
+if (month == 1) day = "31";
+else if (month == 3) day = "31";
+else if (month == 2) day = "28";
+
+if (userDay == userNumber) Console.WriteLine("Победа");
+else Console.WriteLine($"Поражение.В этом месяце {day} дней");
+
+

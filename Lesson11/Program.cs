@@ -124,11 +124,11 @@
 
 //3
 //Random random = new Random();
-//int week = random.Next(1, 8);
-//string day;
+//int week = random.Next(1, 8);string day;
 //if (week == 1) day = "Понедельник";
 //else if (week == 2) day = "Вторник";
 //     else if (week == 3) day = "Среда";
+//
 //          else if (week == 4) day = "Четверг";
 //               else if (week == 5) day = "Пятница";
 //                    else if (week == 6) day = "Суббота";
