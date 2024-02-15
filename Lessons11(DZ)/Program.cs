@@ -215,26 +215,64 @@
 //else if (number == 4) Console.WriteLine("Дядя Федор - Чтобы продать что то ненужное,надо купить что то нужное,а у нас денег нет");
 
 
-//Доп.задание
+//Доп.задание - доделать
+////1
+//Random random = new Random();
+//int month = random.Next(1, 4);
+//Console.WriteLine(month);
+//Console.WriteLine("Введите число месяца от 1 до 3:\n" + "1-Январь\n" + "2-Февраль\n" + "3-Март\n");
+//int userNumber = int.Parse(Console.ReadLine());
+//Console.Write("Угадайте сколько дней в этом месяце? ");
+////int userDay = int.Parse(Console.ReadLine());
+
+//string day = Console.ReadLine();
+
+//if (month == 1) day = "31";
+//else if (month == 2) day = "28 или 29";
+//else if (month == 3) day = "31";
+
+//string userDay = Console.ReadLine();
+//if (userDay == day) Console.WriteLine("Победа");
+//else Console.Write($"Не правильно.В этом месяце {day} дней");
+
+
+
+//2
+//Random random = new Random();
+//int month = random.Next(1, 13);
+//Console.WriteLine(month)
+//if (month == 1) Console.WriteLine("Январь");
+//else if (month == 2) Console.WriteLine("Февраль");
+//else if (month == 3) Console.WriteLine("Март");
+//else if (month == 4) Console.WriteLine("Апрель");
+//else if (month == 5) Console.WriteLine("Май");
+//else if (month == 6) Console.WriteLine("Июнь");
+//else if (month == 7) Console.WriteLine("Июль");
+//else if (month == 8) Console.WriteLine("Август");
+//else if (month == 9) Console.WriteLine("Сентябрь");
+//else if (month == 10) Console.WriteLine("Октябрь");
+//else if (month == 11) Console.WriteLine("Ноябрь");
+//else if (month == 12) Console.WriteLine("Декабрь");
+
+
 //1
 Random random = new Random();
 int month = random.Next(1, 4);
 Console.WriteLine(month);
-Console.WriteLine("Введите число месяца от 1 до 3:\n" + "1-Январь\n" + "2-Февраль\n" + "3-Март\n");
-int userNumber = int.Parse(Console.ReadLine());
+
+if (month == 1) Console.WriteLine("Январь");
+else if (month == 2) Console.WriteLine("Февраль");
+else if (month == 3) Console.WriteLine("Март");
 Console.Write("Угадайте сколько дней в этом месяце? ");
 int userDay = int.Parse(Console.ReadLine());
 
 
-//if (month == 1 && month == 3) Console.WriteLine("31");
-//else if (month == 2) Console.WriteLine("28");
-string day =(Console.ReadLine());
+int day = int.Parse(Console.ReadLine());
+if (month == 1) day = 31;
+else if (month == 2) day = 28;
+else if (month == 3) day = 31;
 
-if (month == 1) day = "31";
-else if (month == 3) day = "31";
-else if (month == 2) day = "28";
-
-if (userDay == userNumber) Console.WriteLine("Победа");
-else Console.WriteLine($"Поражение.В этом месяце {day} дней");
+if (month == userDay) Console.WriteLine("Победа");
+else if (month != userDay) Console.Write($"Не правильно.В этом месяце {day} дней");
 
 
