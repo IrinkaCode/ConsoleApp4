@@ -194,3 +194,37 @@
 //for (int i = str.Length - 1; i >= 0; i--)
 //    Console.Write(str[i]);
 
+//1
+//Console.Write("Введите число: ");
+//int n = int.Parse(Console.ReadLine());
+//long Fact = 1;
+
+//for (int i = 1; i <= n; i++)
+//{
+//    Fact *= i;
+//}
+//Console.WriteLine($"факториал {n}={Fact}");
+
+//for(int i=1;i<=n;f*=i++);
+
+//2
+//Console.Write("Введите первое число a: ");
+//int a = int.Parse(Console.ReadLine());
+//Console.Write("Введите второе число b: ");
+//int b = int.Parse(Console.ReadLine());
+
+
+//for (int i=a;i<=b;i++)
+//{
+//    if (i%3 == 0||i%5==0) Console.WriteLine(i+" ");
+//}
+
+//3
+Console.WriteLine("Введите целое число: ");
+int n=int.Parse(Console.ReadLine());
+int i = 1;
+for (int j=1;j<=n; j+=i)
+{
+    Console.WriteLine(j+" ");
+    i = j - i;
+}
