@@ -120,11 +120,77 @@
 //}
 
 //4
-Console.Write("Введите число: ");
-int n=int.Parse(Console.ReadLine());
-int i = 1;
-while(i<=10)
-{
-    Console.Write($"{n}*{i}={n*i} ");
-    i++;
-}
+//Console.Write("Введите число: ");
+//int n=int.Parse(Console.ReadLine());
+//int i = 1;
+//while(i<=10)
+//{
+//    Console.Write($"{n}*{i}={n*i} ");
+//    i++;
+//}
+
+//6
+//Console.WriteLine("Введите целое число: ");
+//int n=int.Parse(Console.ReadLine());
+//for (int i = 1; i <=n; i++)
+//{
+//    if (n % i == 0) Console.WriteLine(i + " ");
+//}
+
+//7
+//Console.WriteLine("Введите целое число: ");
+//int n = int.Parse(Console.ReadLine());
+//int k = 0;//количество делителей
+//for (int i =2; i < n; i++)
+//{
+//    if (n % i == 0) k++;
+//}
+//if (k == 0) Console.WriteLine("Простое число");
+//else Console.WriteLine("Не простое число");
+
+//8
+//Console.Write("Введите целое число: ");
+//int n = int.Parse(Console.ReadLine());
+//for (int i = 1; i <= n; i++)
+//{
+//    int k = 0; //количество делителей
+//    for (int j = 2; j < i; j++) if(i%j==0) k++;
+//    if (k == 0) Console.WriteLine(i + " ");
+//}
+
+//8 другой вариант
+//int i = 1;
+//while(i<=n)
+//{
+//    int k = 0;
+//    int j = 2; //внутренни счетчик,перебор делителей
+//    while(j<i)
+//    {
+//        if (i % j == 0) k++;
+//        j++;
+//    }
+//    if(k==0) Console.Write(i+" ");
+//    i++;
+//}
+
+//9
+//Console.Write("Введите целое число: ");
+//int n = int.Parse(Console.ReadLine());
+//string str = "";
+//while (n != 1)
+//{
+//    int temp = n % 2;
+//    str += temp;
+//    n /= 2;//счетчик
+//}
+//str += "1";
+
+//for (int i=str.Length-1; i>=0; i--)
+//    Console.Write(str[i]);
+
+//то же самое
+//for (; n != 1; str += n % 2, n /= 2) ;
+//str += "1";
+//for (int i = str.Length - 1; i >= 0; i--)
+//    Console.Write(str[i]);
+
