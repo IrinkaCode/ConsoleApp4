@@ -1,8 +1,8 @@
 ﻿//Тема 13 Урок 1
 
 //Random random = new Random();
-//int num = random.Next(1,6) ;
-//int i= 1;
+//int num = random.Next(1, 6);
+//int i = 1;
 //Console.Write("Угадайте число от 1 до 5 загаданное компьютером\nПопробуйте угадать его за три попытки:  \nВведите число: ");
 //int a = int.Parse(Console.ReadLine());
 //while (i <= 3)
@@ -22,7 +22,7 @@
 //        a = int.Parse(Console.ReadLine());
 //    }
 //}
-//    Console.ReadLine();
+//Console.ReadLine();
 
 
 //тема 13 Урок 2
@@ -35,30 +35,30 @@
 //while (i <=7)
 //{
 //    if (num == 7) break;
-    
+
 //    Console.WriteLine(i++);    
 //}
 
 
 //задача 2
+
 Console.WriteLine("Введите число: ");
-int num=int.Parse(Console.ReadLine());
-int i = 0;
-while (i >= num)
+int n;
+int sum = 0;
+n = int.Parse(Console.ReadLine());
+if (n!=0)
 {
-    if (i == 0) break;
-    Console.WriteLine(i);
+    do
+    {
+        sum += n;
+        Console.WriteLine("Введите число: ");
+        n = int.Parse(Console.ReadLine());
+    }
+    while (n != 0);
+    Console.WriteLine($"Сумма чисел:{sum}");
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+else
+{
+    Console.WriteLine($"Сумма чисел:{sum}");
+}

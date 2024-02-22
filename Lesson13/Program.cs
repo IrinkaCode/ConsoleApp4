@@ -120,14 +120,14 @@
 //}
 
 //4
-//Console.Write("Введите число: ");
-//int n=int.Parse(Console.ReadLine());
-//int i = 1;
-//while(i<=10)
-//{
-//    Console.Write($"{n}*{i}={n*i} ");
-//    i++;
-//}
+Console.Write("Введите число: ");
+int n = int.Parse(Console.ReadLine());
+int i = 1;
+while (i <= 10)
+{
+    Console.Write($"{n}*{i}={n * i} ");
+    i++;
+}
 
 
 
