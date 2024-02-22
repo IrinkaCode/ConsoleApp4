@@ -103,15 +103,15 @@
 //Console.WriteLine();
 
 //2 дописать
-string[] mas = { "Дмитрий", "Максим", "Сергей", "Андрей", "Владислав" };
-Console.WriteLine(mas[1]);
-for (int i = 0; i < mas.Length; i++)
-{
-    Console.WriteLine(mas[i]);
-}
-Console.WriteLine("Введите номер от 0 до 4: ");
-int n = int.Parse(Console.ReadLine());
-Console.WriteLine(mas[n]);
+//string[] mas = { "Дмитрий", "Максим", "Сергей", "Андрей", "Владислав" };
+//Console.WriteLine(mas[1]);
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    Console.WriteLine(mas[i]);
+//}
+//Console.WriteLine("Введите номер от 0 до 4: ");
+//int n = int.Parse(Console.ReadLine());
+//Console.WriteLine(mas[n]);
 
 //4
 //Console.WriteLine("Введите размер массива: ");
