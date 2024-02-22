@@ -53,3 +53,113 @@
 //Console.WriteLine();
 //Console.WriteLine("sum="+sum);
 
+
+//Console.Write("Введите размер массива: ");
+//int n = int.Parse(Console.ReadLine());
+//int[] mas = new int[n];
+//Random random = new Random();
+//int sum = 0;
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = random.Next(10, 100);
+//    sum += mas[i];
+//}
+//foreach(int i in mas)
+//{
+//    Console.Write(i+" ");
+//}
+//Console.WriteLine();
+//Console.WriteLine("sum=" + sum);
+
+//int[] mas=new int[10];
+//Random random = new Random();
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i]=random.Next(-7,8);
+//    Console.Write(mas[i]+" ");
+//}
+//Console.WriteLine();
+//Console.Write("Введите число в диапазоне от -7 до 7: ");
+//int n=int.Parse(Console.ReadLine());
+//int last = -1;
+//int count = 0;
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    if (mas[i]==n) last = i;
+//    if (mas[i] < n) count++;
+//}
+//if(last!=-1) Console.WriteLine("Последнее вхождение "+last);
+//else Console.WriteLine("Такого числа нет");
+//Console.WriteLine("Количество элементов меньше "+n+":"+count);
+
+//1
+//int[] mas1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//int[] mas2 = new int[10];
+//for (int i = 0; i < mas1.Length; i++)
+//{
+//    mas2[i] = i + 1;
+//    Console.Write(mas2[i]+" ");
+//}
+//Console.WriteLine();
+
+//2 дописать
+string[] mas = { "Дмитрий", "Максим", "Сергей", "Андрей", "Владислав" };
+Console.WriteLine(mas[1]);
+for (int i = 0; i < mas.Length; i++)
+{
+    Console.WriteLine(mas[i]);
+}
+Console.WriteLine("Введите номер от 0 до 4: ");
+int n = int.Parse(Console.ReadLine());
+Console.WriteLine(mas[n]);
+
+//4
+//Console.WriteLine("Введите размер массива: ");
+//int n = int.Parse(Console.ReadLine());
+//string[] mas=new string[n];
+//Console.WriteLine("Введите имена: ");
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = Console.ReadLine();
+//}
+//foreach(string i in mas)
+//{
+//    Console.Write(i+" ");
+//}
+//Console.WriteLine();
+
+//5
+//int[] mas = { 4, 7, 3, 9, 2, 5, 8 };
+//Console.WriteLine("Введите число: ");
+//int n=int.Parse(Console.ReadLine());
+//bool have = false;
+//for(int i=0; i<mas.Length;i++)
+//{
+//    if (mas[i]==n)
+//    {
+//        have = true;
+//        break;
+//    }
+//}
+//if (have == true) Console.WriteLine(n);
+//else Console.WriteLine("Число не  найдено");
+
+//8
+//int[] mas = new int[15];
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i]
+//}
+
+//6
+//int[] mas = new int[10];
+//Random random = new Random();
+//int sum = 0;
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i]=random.Next(10,100);
+//    Console.WriteLine(mas[i]+" ");
+//    if (mas[i] % 3 == 0) sum += mas[i];
+//}
+//Console.WriteLine();
+//Console.WriteLine("sum="+sum);
