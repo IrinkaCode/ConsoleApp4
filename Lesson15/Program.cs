@@ -152,14 +152,14 @@
 //}
 
 //6
-//int[] mas = new int[10];
-//Random random = new Random();
-//int sum = 0;
-//for (int i = 0; i < mas.Length; i++)
-//{
-//    mas[i]=random.Next(10,100);
-//    Console.WriteLine(mas[i]+" ");
-//    if (mas[i] % 3 == 0) sum += mas[i];
-//}
-//Console.WriteLine();
-//Console.WriteLine("sum="+sum);
+int[] mas = new int[10];
+Random random = new Random();
+int sum = 0;
+for (int i = 0; i < mas.Length; i++)
+{
+    mas[i] = random.Next(10, 100);
+    Console.Write(mas[i] + " ");
+    if (mas[i] % 3 == 0) sum += mas[i];
+}
+Console.WriteLine();
+Console.WriteLine("sum=" + sum);
