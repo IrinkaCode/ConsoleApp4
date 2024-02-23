@@ -32,33 +32,52 @@
 //int num = random.Next(1, 11);
 //Console.WriteLine(num);
 //int i = 1;
-//while (i <=7)
+//while (i <= num)
 //{
 //    if (num == 7) break;
 
-//    Console.WriteLine(i++);    
+//    Console.WriteLine(i++);
 //}
 
 
 //задача 2
 
-Console.WriteLine("Введите число: ");
-int n;
-int sum = 0;
-n = int.Parse(Console.ReadLine());
-if (n!=0)
+//Console.Write("Введите число: ");
+//int n;
+//int sum = 0;
+//n = int.Parse(Console.ReadLine());
+//if (n!=0)
+//{
+//    do
+//    {
+//        sum += n;
+//        Console.Write("Введите число: ");
+//        n = int.Parse(Console.ReadLine());
+//    }
+//    while (n != 0);
+//    Console.Write($"Сумма чисел:{sum}");
+
+//}
+//else
+//{
+//    Console.Write($"Сумма чисел:{sum}");
+//}
+
+
+
+
+
+Random random = new Random();
+int num = random.Next(1, 11);
+Console.Write(num);
+int i = 1;
+int n = 0;
+while (num != 7)
 {
-    do
-    {
-        sum += n;
-        Console.WriteLine("Введите число: ");
-        n = int.Parse(Console.ReadLine());
-    }
-    while (n != 0);
-    Console.WriteLine($"Сумма чисел:{sum}");
+    if (num == 7)
+        num++;
+else 
+
 
 }
-else
-{
-    Console.WriteLine($"Сумма чисел:{sum}");
-}
+
