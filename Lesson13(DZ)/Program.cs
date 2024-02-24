@@ -29,15 +29,13 @@
 //задача 1
 
 //Random random = new Random();
-//int num = random.Next(1, 11);
-//Console.WriteLine(num);
-//int i = 1;
-//while (i <= num)
+//int n;
+//do
 //{
-//    if (num == 7) break;
-
-//    Console.WriteLine(i++);
+//    n = random.Next(1, 11);
+//    Console.Write(n + " ");
 //}
+//while (n != 7);
 
 
 //задача 2
@@ -64,20 +62,4 @@
 //}
 
 
-
-
-
-Random random = new Random();
-int num = random.Next(1, 11);
-Console.Write(num);
-int i = 1;
-int n = 0;
-while (num != 7)
-{
-    if (num == 7)
-        num++;
-else 
-
-
-}
 
