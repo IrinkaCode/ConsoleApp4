@@ -41,25 +41,21 @@
 //задача 2
 
 Console.Write("Введите число: ");
-int n;
+int n = int.Parse(Console.ReadLine());
 int sum = 0;
-if (n != 0)
-{
-    do
-    {
-        Console.Write("Введите число: ");
-        n = int.Parse(Console.ReadLine());
 
-        sum += n;
-    }
-    while (n != 0);
-    Console.Write($"Сумма чисел:{sum}");
+do
+{
+    sum += n;
+    Console.Write("Введите число: ");
+    n = int.Parse(Console.ReadLine());
 
 }
-else
-{
-    Console.Write($"Сумма чисел:{sum}");
-}
+while (n != 0);
+Console.Write($"Сумма чисел:{sum += n}");
+
+
+
 
 
 
