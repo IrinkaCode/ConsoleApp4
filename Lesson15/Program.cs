@@ -93,6 +93,7 @@
 //Console.WriteLine("Количество элементов меньше "+n+":"+count);
 
 //1
+//Создайте одномерный массив с числами от 1 до 10. 
 //int[] mas1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 //int[] mas2 = new int[10];
 //for (int i = 0; i < mas1.Length; i++)
@@ -102,7 +103,12 @@
 //}
 //Console.WriteLine();
 
-//2 дописать
+//2 
+//Создайте одномерный массив, состоящий из имен пользователей: 
+//Дмитрий, Максим, Сергей, Андрей, Владислав. 
+//Выведите на экран имя Максим. 
+//Выведите все имена построчно используя цикл for. 
+
 //string[] mas = { "Дмитрий", "Максим", "Сергей", "Андрей", "Владислав" };
 //Console.WriteLine(mas[1]);
 //for (int i = 0; i < mas.Length; i++)
@@ -114,6 +120,9 @@
 //Console.WriteLine(mas[n]);
 
 //4
+//Создайте пустой строковый массив, с помощью цикла for заполните 
+//его именами, принимаемыми от пользователя. 
+//Выведите содержимое массива на экран. 
 //Console.WriteLine("Введите размер массива: ");
 //int n = int.Parse(Console.ReadLine());
 //string[] mas=new string[n];
@@ -129,6 +138,10 @@
 //Console.WriteLine();
 
 //5
+//Создайте массив разных цифр. 
+//От пользователя берется число, и производится поиск числа в массиве. 
+//Если число найдено, выведите его на экран, если нет, выведите “число 
+//не найдено”
 //int[] mas = { 4, 7, 3, 9, 2, 5, 8 };
 //Console.WriteLine("Введите число: ");
 //int n=int.Parse(Console.ReadLine());
@@ -145,21 +158,54 @@
 //else Console.WriteLine("Число не  найдено");
 
 //8
+//Создайте массив из 15 случайных целых чисел и выведите на экран 
+//только те элементы, которые делятся на 2 и не делятся на 3. 
+
 //int[] mas = new int[15];
+//Random random = new Random();
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    mas[i]
+//    mas[i]=random.Next(1,100);
+//    Console.Write(mas[i]+" ");
+//}
+//Console.WriteLine();
+//foreach (int i in mas)
+//{
+//    if(i%2==0&&i%3!=0) Console.Write(i+" ");
 //}
 
 //6
-int[] mas = new int[10];
-Random random = new Random();
-int sum = 0;
-for (int i = 0; i < mas.Length; i++)
-{
-    mas[i] = random.Next(10, 100);
-    Console.Write(mas[i] + " ");
-    if (mas[i] % 3 == 0) sum += mas[i];
-}
-Console.WriteLine();
-Console.WriteLine("sum=" + sum);
+//Создайте массив из 10 случайных целых чисел и найдите в нем сумму всех элементов, кратных 3. 
+//int[] mas = new int[10];
+//Random random = new Random();
+//int sum = 0;
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = random.Next(10, 100);
+//    Console.Write(mas[i] + " ");
+//    if (mas[i] % 3 == 0) sum += mas[i];
+//}
+//Console.WriteLine();
+//Console.WriteLine("sum=" + sum);
+
+//7
+//Создайте массив из 20 случайных действительных чисел и
+//найдите в нем индекс первого отрицательного элемента.
+
+//double[] mas = new double[20];
+//Random random = new Random();
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = random.NextDouble() * 100 - 50;
+//    Console.Write($"{mas[i]:F} ");
+//}
+//Console.WriteLine();
+//int index = -1;
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    if (mas[i]<0)
+//    {
+//        index = i; break;
+//    }
+//}
+//Console.WriteLine("Индекс первого отрицательного: "+index);
