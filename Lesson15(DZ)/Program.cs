@@ -47,3 +47,12 @@
 //массиве. Если число не найдено, программа выводит сообщение об
 //ошибке.
 
+Random random = new Random();
+for (int i = 0; i < mas.Length; i++)
+{
+    mas[i] = random.Next(5);
+    Console.Write(mas[i] + " ");
+}
+Console.WriteLine("Введите число");
+int m=int.Parse(Console.ReadLine());
+Console.WriteLine(Array.IndexOf();

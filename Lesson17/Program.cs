@@ -164,47 +164,99 @@
 //}
 
 //1
-Random random = new Random();
+//Random random = new Random();
 
-string a = "Tom";
-string b = "Jerry";
-string c = "Bob";
-string d = "Mike";
-string e = "Jone";
-string f = "Maria";
-string[] names = new string[6];
-for ( int i = 0;i<names.Length;i++ )
-{
-    switch(random.Next((6)))
-        {
-        case 0:
-            names[i] = a; break;
-        case 1:
-            names[i] = b; break;
-        case 2:
-            names[i]= c; break;
-        case 3:
-            names[i] = d; break;
-        case 4:
-            names[i] = e; break;
-        case 5:
-            names[i] = f; break;
-    }
-    Console.WriteLine(names[i]+" ");
-}
-Console.WriteLine();
-do
-{
-    Console.WriteLine("Введите имя: ");
-    string name = Console.ReadLine();
-    while (Array.IndexOf(names, name) != -1)
-    {
-        names[Array.IndexOf(names, name)] = "Удален";
-    }
-    Console.Write("Продолжить y/n: ");
-    char answer = char.Parse(Console.ReadLine());
-    if (answer == 'n') break;
-}
-while (true);
-foreach (string i in names)
-    if(i!="Удален") Console.WriteLine(i+" ");
+//string a = "Tom";
+//string b = "Jerry";
+//string c = "Bob";
+//string d = "Mike";
+//string e = "Jone";
+//string f = "Maria";
+//string[] names = new string[6];
+//for ( int i = 0;i<names.Length;i++ )
+//{
+//    switch(random.Next((6)))
+//        {
+//        case 0:
+//            names[i] = a; break;
+//        case 1:
+//            names[i] = b; break;
+//        case 2:
+//            names[i]= c; break;
+//        case 3:
+//            names[i] = d; break;
+//        case 4:
+//            names[i] = e; break;
+//        case 5:
+//            names[i] = f; break;
+//    }
+//    Console.WriteLine(names[i]+" ");
+//}
+//Console.WriteLine();
+//do
+//{
+//    Console.WriteLine("Введите имя: ");
+//    string name = Console.ReadLine();
+//    while (Array.IndexOf(names, name) != -1)
+//    {
+//        names[Array.IndexOf(names, name)] = "Удален";
+//    }
+//    Console.Write("Продолжить y/n: ");
+//    char answer = char.Parse(Console.ReadLine());
+//    if (answer == 'n') break;
+//}
+//while (true);
+//foreach (string i in names)
+//    if(i!="Удален") Console.WriteLine(i+" ");
+
+//2
+
+//Random random = new Random();
+//Console.Write("Введите размер массива:");
+//int n=int.Parse(Console.ReadLine());
+//int[] mas1 = new int[n];
+//int[] mas2 = new int[n];
+//int[] mas3 = new int[n];
+//for (int i = 0; i < mas1.Length; i++)
+//{
+//    mas1[i] = random.Next(10, 100);
+//    mas1[i] = random.Next(10, 100);
+//    mas3[i] = mas1[i] - mas2[i];
+//}
+//foreach (int i in mas1) Console.Write(i + " ");
+//Console.WriteLine();
+//foreach (int i in mas2) Console.Write(i + " ");
+//Console.WriteLine();
+//foreach (int i in mas3) Console.Write(i + " ");
+//Console.WriteLine();
+
+//3
+
+//Console.Write("Введите размер массива:");
+//int n = int.Parse(Console.ReadLine());
+//Random random = new Random();
+//double[] mas = new double[n];
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i]=random.NextDouble()*100;
+//    Console.Write($"{ mas[i]:F2} ");
+//}
+//Console.WriteLine();
+//Array.Reverse(mas);
+//string strMas = "";
+//foreach (double i in mas)
+//{
+//    Console.Write($"{i:F2} ");
+//    strMas += i.ToString("F2") + " ";
+//}
+//Console.WriteLine();
+//Console.WriteLine(strMas);
+//Console.WriteLine(strMas.Substring(0,strMas.Length/2-1));
+
+//4
+Random random = new Random();
+Console.Write("Введите размер массива:");
+int n = .Parse(Console.ReadLine());
+double[] mas1 = new double[n];
+double[] mas2 = new double[n];
+double[] mas3 = new double[n];
