@@ -60,7 +60,7 @@ string password = "";
 for (int i = 0; i < passwordLength; i++)
 {
     int index = random.Next(passwordLength);
-    password += characters[index];
+    password += characters[i];
 }
 Console.WriteLine($"Ваш пароль: {password}");
 
