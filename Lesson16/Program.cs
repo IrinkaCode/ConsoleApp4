@@ -94,38 +94,38 @@
 //Создайте массив из 30 случайных целых чисел и выведите на экран 
 //все элементы, которые встречаются в массиве больше одного раза.
 
-int[] mas = new int[30];
-Random random = new Random();
-for (int i = 0; i < mas.Length; i++)
-{
-    mas[i] = random.Next(20);
-    Console.Write(mas[i] + " ");
-}
-Console.WriteLine();
-Array.Sort(mas);
-foreach (int item in mas)
-{
-    Console.Write(item + " ");
-}
-Console.WriteLine();
-int count = 0;
-for (int i = 1; i < mas.Length; i++)
-{
-    if (mas[i] == mas[i - 1]) count++;
+//int[] mas = new int[30];
+//Random random = new Random();
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = random.Next(20);
+//    Console.Write(mas[i] + " ");
+//}
+//Console.WriteLine();
+//Array.Sort(mas);
+//foreach (int item in mas)
+//{
+//    Console.Write(item + " ");
+//}
+//Console.WriteLine();
+//int count = 0;
+//for (int i = 1; i < mas.Length; i++)
+//{
+//    if (mas[i] == mas[i - 1]) count++;
 
-    else if (mas[i] != mas[i - 1])
-    {
-        if (count > 0)
-        {
-            Console.Write(mas[i - 1] + " ");
-            count = 0;
-        }
-    }
-    if (i == mas.Length - 1)
-    {
-        if (count > 0)
-        {
-            Console.Write(mas[i] + " ");
-        }
-    }
-}
+//    else if (mas[i] != mas[i - 1])
+//    {
+//        if (count > 0)
+//        {
+//            Console.Write(mas[i - 1] + " ");
+//            count = 0;
+//        }
+//    }
+//    if (i == mas.Length - 1)
+//    {
+//        if (count > 0)
+//        {
+//            Console.Write(mas[i] + " ");
+//        }
+//    }
+//}

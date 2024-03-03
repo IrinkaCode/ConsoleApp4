@@ -256,7 +256,7 @@
 //4
 Random random = new Random();
 Console.Write("Введите размер массива:");
-int n = .Parse(Console.ReadLine());
+int n = int.Parse(Console.ReadLine());
 double[] mas1 = new double[n];
 double[] mas2 = new double[n];
 double[] mas3 = new double[n];
