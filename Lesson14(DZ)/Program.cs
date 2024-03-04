@@ -50,8 +50,6 @@
 // Урок 1
 //Нужно разработать программу, которая будет генерировать пароли заданной длины для пользователей.
 
-
-
 Console.Write("Введите длину пароля: ");
 int passwordLength = int.Parse(Console.ReadLine());
 string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -59,8 +57,8 @@ Random random = new Random();
 string password = "";
 for (int i = 0; i < passwordLength; i++)
 {
-    int index = random.Next(passwordLength);
-    password += characters[i];
+    int index = random.Next(characters.Length);
+    password += characters[index];
 }
 Console.WriteLine($"Ваш пароль: {password}");
 
