@@ -110,27 +110,62 @@
 //}
 
 //4
+//Random random = new Random();
+//int n = random.Next(5, 10);
+//int m = random.Next(5, 10);
+//int[,] mas1 = new int[n, m];
+//int[,] mas2 = new int[m, n];
+//for (int i = 0; i < mas1.GetUpperBound(0) + 1; i++)
+//{
+//    for (int j = 0; j < mas1.GetUpperBound(1) + 1; j++)
+//    {
+//        mas1[i, j] = random.Next(10, 100);
+//        Console.Write(mas1[i, j] + " ");
+//        mas2[j, i] = mas1[i, j];
+//    }
+//    Console.WriteLine();
+//}
+//Console.WriteLine();
+//for (int i = 0; i < mas2.GetUpperBound(0) + 1; i++)
+//{
+//    for (int j = 0; j < mas1.GetUpperBound(1) + 1; j++)
+//    {
+//        Console.WriteLine(mas2[i,j]+" ");
+//    }
+//    Console.WriteLine();
+//}
+
+
 Random random = new Random();
-int n = random.Next(5, 10);
-int m = random.Next(5, 10);
-int[,] mas1 = new int[n, m];
-int[,] mas2 = new int[m, n];
-for (int i = 0; i < mas1.GetUpperBound(0) + 1; i++)
+double[,] mas = new double[3, 3];
+for (int i = 0; i < mas.GetLength(0); i++)
 {
-    for (int j = 0; j < mas1.GetUpperBound(1) + 1; j++)
+    for (int j = 0; j < mas.GetLength(1); j++)
     {
-        mas1[i, j] = random.Next(10, 100);
-        Console.Write(mas1[i, j] + " ");
-        mas2[j, i] = mas1[i, j];
+        mas[i, j] = random.NextDouble() * 20;
+        Console.Write($"{mas[i, j]:F2} ");
     }
     Console.WriteLine();
 }
-Console.WriteLine();
-for (int i = 0; i < mas2.GetUpperBound(0) + 1; i++)
+int n, m;
+Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
+do
 {
-    for (int j = 0; j < mas1.GetUpperBound(1) + 1; j++)
+    n = int.Parse(Console.ReadLine());
+    if (n > mas.GetLength(0)) Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
+}
+while (n > mas.GetLength(1));
+m = int.Parse(Console.ReadLine());
+double val = double.Parse(Console.ReadLine());
+mas[n - 1, m - 1] = val;
+for (int i = 0; i < mas.GetLength(0); i++)
+{
+    for (int j = 0; j < mas.GetLength(1); j++)
     {
-        Console.WriteLine(mas2[i,j]+" ");
+        Console.Write($"{mas[i, j]:F2} ");
     }
     Console.WriteLine();
 }
+
+
+
