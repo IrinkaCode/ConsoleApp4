@@ -136,36 +136,104 @@
 //}
 
 
-Random random = new Random();
-double[,] mas = new double[3, 3];
-for (int i = 0; i < mas.GetLength(0); i++)
-{
-    for (int j = 0; j < mas.GetLength(1); j++)
-    {
-        mas[i, j] = random.NextDouble() * 20;
-        Console.Write($"{mas[i, j]:F2} ");
-    }
-    Console.WriteLine();
-}
-int n, m;
-Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
-do
-{
-    n = int.Parse(Console.ReadLine());
-    if (n > mas.GetLength(0)) Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
-}
-while (n > mas.GetLength(1));
-m = int.Parse(Console.ReadLine());
-double val = double.Parse(Console.ReadLine());
-mas[n - 1, m - 1] = val;
-for (int i = 0; i < mas.GetLength(0); i++)
-{
-    for (int j = 0; j < mas.GetLength(1); j++)
-    {
-        Console.Write($"{mas[i, j]:F2} ");
-    }
-    Console.WriteLine();
-}
+//Random random = new Random();
+//double[,] mas = new double[3, 3];
+//for (int i = 0; i < mas.GetLength(0); i++)
+//{
+//    for (int j = 0; j < mas.GetLength(1); j++)
+//    {
+//        mas[i, j] = random.NextDouble() * 20;
+//        Console.Write($"{mas[i, j]:F2} ");
+//    }
+//    Console.WriteLine();
+//}
+//int n, m;
+//Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
+//do
+//{
+//    n = int.Parse(Console.ReadLine());
+//    if (n > mas.GetLength(0)) Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
+//}
+//while (n > mas.GetLength(1));
+//m = int.Parse(Console.ReadLine());
+//double val = double.Parse(Console.ReadLine());
+//mas[n - 1, m - 1] = val;
+//for (int i = 0; i < mas.GetLength(0); i++)
+//{
+//    for (int j = 0; j < mas.GetLength(1); j++)
+//    {
+//        Console.Write($"{mas[i, j]:F2} ");
+//    }
+//    Console.WriteLine();
+//}
 
 
+//Урок 1тема 16 задача 2
+//// Создать массив символов 5x2
+//char[,] array = new char[5, 2];
 
+//// Заполнить массив символами в разнобой
+//Random random = new Random();
+//for (int i = 0; i < array.GetLength(0); i++)
+//{
+//    for (int j = 0; j < array.GetLength(1); j++)
+//    {
+//        array[i, j] = (char)random.Next(65, 91); // Генерировать случайные заглавные буквы
+//    }
+//}
+
+//// Вывести массив на экран
+//for (int i = 0; i < array.GetLength(0); i++)
+//{
+//    for (int j = 0; j < array.GetLength(1); j++)
+//    {
+//        Console.Write(array[i, j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+//// Составить слово из символов массива
+//string word = "";
+//for (int i = 0; i < array.GetLength(0); i++)
+//{
+//    for (int j = 0; j < array.GetLength(1); j++)
+//    {
+//        word += array[i, j];
+//    }
+//}
+
+//// Вывести составленное слово
+//Console.WriteLine("Составленное слово: " + word);
+
+
+//Урок 1 тема 16
+//Random random = new Random();
+//double[,] mas = new double[3, 3];
+//for (int i = 0; i < mas.GetLength(0); i++)
+//{
+//    for (int j = 0; j < mas.GetLength(1); j++)
+//    {
+//        mas[i, j] = random.NextDouble() * 20;
+//        Console.Write($"{mas[i, j]:F2} ");
+//    }
+//    Console.WriteLine();
+//}
+//int n, m;
+//Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
+//do
+//{
+//    n = int.Parse(Console.ReadLine());
+//    if (n > mas.GetLength(0)) Console.Write($"Введите номер строки <= {mas.GetLength(1)}:");
+//}
+//while (n > mas.GetLength(1));
+//m = int.Parse(Console.ReadLine());
+//double val = double.Parse(Console.ReadLine());
+//mas[n - 1, m - 1] = val;
+//for (int i = 0; i < mas.GetLength(0); i++)
+//{
+//    for (int j = 0; j < mas.GetLength(1); j++)
+//    {
+//        Console.Write($"{mas[i, j]:F2} ");
+//    }
+//    Console.WriteLine();
+//}
