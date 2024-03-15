@@ -31,23 +31,46 @@
 //    Console.WriteLine();
 //}
 
-//2 Покер переписать из гитхаба
-
+//2 
+//Random random = new Random();
 //string[] mast = new string[] { "Пики", "Крести", "Черви", "Буби" };
 //string[] nominal = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Валет", "Дама", "Король", "Туз" };
 //string[,,] players = new string[4, 2, 2];
-//Random random = new Random();
+//int[] setmast = new int[8];
+//int[] setNom = new int[8];
+//int count = 0;
 //for (int i = 0; i < players.GetLength(0); i++)
 //{
-//    Console.Write(i+1+" ");
-//    for (int j = 0; j < players.GetLength(1); j++)
+//	Console.Write(i+1+". ");
+//	for (int j = 0; j < players.GetLength(1);)
 //	{
-//		players[i, j, 0] = mast[random.Next(4)];
-//		players[i, j, 1] = nominal[random.Next(13)];
-//        Console.Write( players[i, j, 1]+" "+ players[i, j, 0]+"\t");
-//    }
-//    Console.WriteLine();
+//		int n = random.Next(4);
+//        int m = random.Next(13);
+//		bool yes = false;
+//		for (int k = 0; k < 8;k++)
+//		{
+//			if (setmast[k] == n && setNom[k] == m)
+//			{
+//				yes = true;
+//				break;
+//            }
+//		}
+//		if (yes == true) continue;
+//        players[i, j, 0] = mast[n];
+//        players[i, j, 1] = nominal[m];
+//		setmast[count] = n;
+//		setNom[count] = m;
+//        Console.Write(players[i, j, 1]+" " + players[i,j,0]+"\t");
+//		j++;
+//		count++;
+//	}
+//	Console.WriteLine();
 //}
+//for (int i = 0; i < 8; i++)
+//{
+//	Console.WriteLine(setmast[i]+" " + setNom[i]);
+//}
+
 
 //1
 //int[,,] mas = new int[4, 6, 8];
@@ -111,11 +134,24 @@
 //    }
 //    Console.WriteLine();
 //}
+
+
 int[,] mas = new int[4, 3];
 for (int i = 0; i < mas.GetLength(0); i++)
 {
-	for (int j = 0; j < mas.GetLength(1); j++)
-	{
-
-	}
+    for (int j = 0; j < mas.GetLength(1); j++)
+    {
+        mas[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+Console.Write("Введите число:");
+int c = int.Parse(Console.ReadLine());
+mas[2, 2] = c;
+for (int i = 0; i < mas.GetLength(0); i++)
+{
+    for (int j = 0; j < mas.GetLength(1); j++)
+    {
+        Console.Write(mas[i, j] + " "); ;
+    }
+    Console.WriteLine();
 }

@@ -1,98 +1,24 @@
-﻿//int[][] mas = new int[10][];
-//Random random = new Random();
+﻿////Урок 1 - готово
+//int[][] mas = new int[3][];
+//mas[0] = new int[] { 1, 2, 3 };
+//mas[1] = new int[] { 4, 5, 6 };
+//mas[2] = new int[] { 7, 8, 9 };
+//Console.WriteLine(mas);
+//Console.Write("Введите число 200: ");
+//int num = int.Parse(Console.ReadLine());
+//mas[2][2] = num;
 
-//for (int i = 0; i < mas.Length; i++)
+//foreach (int[] i in mas)
 //{
-//    mas[i] = new int[random.Next(1, 10)];
-//}
-//for (int i = 0; i < mas.Length; i++)
-//{
-//    for (int j = 0; j < mas[i].Length; j++)
+//    foreach (int n in i)
 //    {
-//        mas[i][j] = random.Next(1, 10);
-//        Console.Write(mas[i][j] + " ");
-//    }
-//    Console.WriteLine();
-//}
-//Console.Write("Введите строку, которую хотите заменить: ");
-//int n = int.Parse(Console.ReadLine());
-//Console.Write("Введите столбец,который хотите заменить: ");
-//int m = int.Parse(Console.ReadLine());
-//Console.WriteLine("Введите число 200");
-//int k = int.Parse(Console.ReadLine());
-//int index=int.Parse(Console.ReadLine());
-//mas[index][0] = k;
-//// Вывести новый массив на экран
-//Console.Write("Новый массив: ");
-//for (int i = 0; i <mas.Length; i++)
-//{ 
-//    Console.Write(mas[i][0]+" ");   
-//}
-
-//2
-//int[][] mas = new int[10][];
-//Random random = new Random();
-
-//for (int i = 0; i < mas.Length; i++)
-//{
-//    mas[i] = new int[random.Next(1, 10)];
-//}
-//for (int i = 0; i < mas.Length; i++)
-//{
-//    for (int j = 0; j < mas[i].Length; j++)
-//    {
-//        mas[i][j] = random.Next(1, 10);
-//        Console.Write(mas[i][j] + " ");
-//    }
-//    Console.WriteLine();
-//}
-//Console.WriteLine("Введите число 200:");
-//int userInput = int.Parse(Console.ReadLine());
-//mas[random.Next(0, mas.Length)] = mas[userInput];
-
-////mas[5][0] = userInput;
-//Console.WriteLine("Новый массив: ");
-//for (int i = 0; i < mas.Length; i++)
-//{
-//    for (int j = 0; j < mas.Length; j++)
-//    {
-//        Console.Write(mas[i][j] + " ");
-//    }
-
-//}
-
-
-//3
-//int[][] mas = new int[10][];
-//Random random = new Random();
-
-//for (int i = 0; i < mas.Length; i++)
-//{
-//    mas[i] = new int[random.Next(1, 10)];
-//    for (int j = 0; j < mas[i].Length; j++)
-//    {
-//        mas[i][j] = random.Next(1, 10);
-//        Console.Write(mas[i][j] + " ");
+//        Console.Write(n + " ");
 //    }
 //    Console.WriteLine();
 //}
 
-//Console.Write("Введите число 200:");
-//int userInput = int.Parse(Console.ReadLine());
-//int randomIndex = random.Next(0, mas.Length);
-//mas[randomIndex] = new int[] { userInput };
 
-//Console.WriteLine("Новый массив: ");
-//for (int i = 0; i < mas.Length; i++)
-//{
-//    for (int j = 0; j < mas[i].Length; j++)
-//    {
-//        Console.Write(mas[i][j] + " ");
-//    }
-//    Console.WriteLine();
-//}
-
-//Урок 2
+////Урок 2 -готово
 //int[][] mas = new int[3][];
 //Random random = new Random();
 //for (int i = 0; i < mas.Length; i++)
@@ -131,6 +57,124 @@
 //Console.WriteLine();
 //// среднее арифметическое - делим общею сумму на количество элементов
 //Console.WriteLine($"avg: {overallSum / amount}");
+
+
+//Неправильные варианты
+//int[,] mas = new int[4, 3];
+//Random random = new Random();
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    for (int j = 0; j < mas.Length; j++)
+//    {
+//        mas[i,j] = random.Next(1, 10);
+//        Console.Write(mas[i,j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+//Console.WriteLine("Введите число 200: ");
+//int k = int.Parse(Console.ReadLine());
+//int index = int.Parse(Console.ReadLine());
+//mas[index,0] = k;
+////Вывести новый массив на экран
+//Console.Write("Новый массив: ");
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    for (int j = 0; j < mas.Length; j++)
+//    {
+//        Console.Write(mas[index,0] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+//2
+//int[,] mas = new int[4,3];
+//Random random = new Random();
+
+////for (int i = 0; i < mas.Length; i++)
+////{
+////    mas[i,j] = new int[random.Next(1, 10)];
+////}
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    for (int j = 0; j < mas.Length; j++)
+//    {
+//        mas[i,j] = random.Next(1, 10);
+//        Console.Write(mas[i,j] + " ");
+//    }
+//    Console.WriteLine(mas);
+//}
+//Console.WriteLine();
+//Console.WriteLine("Введите число 200: ");
+//int userInput = int.Parse(Console.ReadLine());
+//mas[2,2] = userInput;
+
+////mas[5][0] = userInput;
+//Console.WriteLine("Новый массив: ");
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    for (int j = 0; j < mas.Length; j++)
+//    {
+//        Console.Write(mas[i,j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+//Console.WriteLine();
+
+
+//3
+//int[,] mas = new int[4, 3];
+//Random random = new Random();
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    //mas[i,j] = new int[random.Next(1, 10)];
+//    for (int j = 0; j < mas.Length; j++)
+//    {
+//        mas[i, j] = random.Next(1, 10);
+//        Console.Write(mas[i, j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+//Console.Write("Введите число 200:");
+//int userInput = int.Parse(Console.ReadLine());
+//int randomIndex = random.Next(0, mas.Length);
+//int[] mas2 = new int[] { userInput };
+
+//Console.WriteLine("Новый массив: ");
+//for (int i = 0; i < mas2.Length; i++)
+//{
+//    for (int j = 0; j < mas2.Length; j++)
+//    {
+//        Console.Write(mas[i, j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+
+
+
+int[,] mas = new int[4, 3];
+for (int i = 0; i < mas.GetLength(0); i++)
+{
+    for (int j = 0; j < mas.GetLength(1); j++)
+    {
+        mas[i, j] = int.Parse(Console.ReadLine());
+    }
+    Console.WriteLine(mas);
+}
+
+Console.Write("Введите число:");
+int c = int.Parse(Console.ReadLine());
+mas[2, 2] = c;
+
+for (int i = 0; i < mas.GetLength(0); i++)
+{
+    for (int j = 0; j < mas.GetLength(1); j++)
+    {
+        Console.Write(mas[i, j] + " ");
+    }
+    Console.WriteLine();
+}
 
 
 
