@@ -32,11 +32,8 @@ for (int i = 0; i < mas.Length; i++)
     Console.WriteLine();
 }
 Console.WriteLine();
-// общее количество элементов всех массивов
 int amount = 0;
-// общая сумма элементов всех массивов
 int sum = 0;
-// цикл по массивам
 for (int k = 0; k < mas.Length; k++)
 {
     amount += mas[k].Length;
@@ -50,7 +47,6 @@ for (int k = 0; k < mas.Length; k++)
     sum += masSum;
 }
 Console.WriteLine();
-// среднее арифметическое - делим общею сумму на количество элементов
 Console.WriteLine($"avg: {sum / amount}");
 
 
