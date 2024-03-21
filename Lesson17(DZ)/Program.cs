@@ -1,4 +1,5 @@
 ﻿////Урок 1 
+///Вариант 1
 //int[][] mas = new int[3][];
 //mas[0] = new int[] { 1, 2, 3 };
 //mas[1] = new int[] { 4, 5, 6 };
@@ -13,6 +14,28 @@
 //    foreach (int n in i)
 //    {
 //        Console.Write(n + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+
+//Вариант 2
+//int[,] mas = new int[4, 3];
+//for (int i = 0; i < mas.GetLength(0); i++)
+//{
+//    for (int j = 0; j < mas.GetLength(1); j++)
+//    {
+//        mas[i, j] = int.Parse(Console.ReadLine());
+//    }
+//}
+//Console.Write("Введите число:");
+//int c = int.Parse(Console.ReadLine());
+//mas[2, 2] = c;
+//for (int i = 0; i < mas.GetLength(0); i++)
+//{
+//    for (int j = 0; j < mas.GetLength(1); j++)
+//    {
+//        Console.Write(mas[i, j] + " "); ;
 //    }
 //    Console.WriteLine();
 //}
