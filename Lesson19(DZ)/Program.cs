@@ -56,7 +56,7 @@ while (true)
     currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
 }
     
-    static void PrintBoard(char[,] board)
+void PrintBoard(char[,] board)
 {
     for (int i = 0; i < 3; i++)
     {
@@ -68,7 +68,7 @@ while (true)
     }
 }
 
-static bool CheckWin(char[,] board, char player)
+bool CheckWin(char[,] board, char player)
 {
     // Проверка по горизонтали
     for (int i = 0; i < 3; i++)
