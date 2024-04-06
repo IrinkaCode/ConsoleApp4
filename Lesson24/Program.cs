@@ -162,25 +162,32 @@
 //if (IsAnogram(str1, str2)) Console.WriteLine("Анограммы");
 //Console.WriteLine("Не анограммы");
 
-void Swap(ref int a,ref int b) //ref-передача по ссылке
-{
-    int temp = a;
-    a=b;
-    b=temp;
-}
-int x = 7, y = 9;
-Console.WriteLine(x + " " + y);
-Swap(ref x,ref y);
-Console.WriteLine(x + " " + y);
+//void Swap(ref int a,ref int b )//ref - передача по ссылке
+//{
+//    int temp = a;
+//    a = b;
+//    b = temp;
+//}
+//int func ( in int x )//in - входной
+//{
+//    return 2 * x + 1;
+//}
+//void Add ( int x, int y, out int s )
+//{
+//    s = x + y;
+//}
+//int x = 7, y = 9;
+//Console.WriteLine(x+" "+y);
+//Swap(ref x,ref y);
+//Console.WriteLine(x + " " + y);
+//x = 10;
+//Console.WriteLine(func(x));
 
-int func (in int x) //in-входной параметр
-{
-    return 2 * x + 1;
-}
-Console.WriteLine(func(x));
+//int s = 0;
+//Add(x, y, out s);
+//Console.WriteLine(s);
 
-int s = 9;
-void Add(int x,int y out s)
-{
+int n;
+int.TryParse(Console.ReadLine(), out n);
+Console.WriteLine(n);
 
-}
