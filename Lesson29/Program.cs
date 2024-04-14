@@ -1,12 +1,19 @@
 ﻿//Память.Понятие стека и кучи
 
-// дописать
 //int x = 10;
 //int y = 15;
 //int S = x + y;
 //Console.WriteLine(S);
-//int[]mas = new int[5];
-//Array.Fill()
+//int[] mas = new int[5];
+//Array.Fill(mas, 5);
+//foreach (int i in mas) Console.Write(i+" ");
+//Console.WriteLine();
+//int[] mas2 = mas;
+//Array.Fill(mas2, 3, 0, 3);
+//foreach (int i in mas) Console.Write(i + " ");
+//Console.WriteLine();
+//foreach (int i in mas2) Console.Write(i + " ");
+//Console.WriteLine();
 
 
 //1
@@ -14,20 +21,23 @@
 //Напишите метод Swap, который принимает две переменные типа int по ссылке (используя ключевое слово ref) и меняет их значения местами.
 //Продемонстрируйте использование этого метода, передавая две переменные и выводя измененные значения.
 
-//Console.Write("Введите 1 число: ");
-//int x;
-//int.TryParse(Console.ReadLine(), out x);
-//Console.Write("Введите 2 число: ");
-//int y;
-//int.TryParse(Console.ReadLine(), out y);
-//Console.WriteLine(x+" "+y);
-//Change
-//void Change(int x, int y);
+//void Swap(ref int x,ref int y)
 //{
 //    int temp = x;
 //    x = y;
-//    y= temp;
+//    y = temp;
 //}
+
+//Console.Write("Введите 1 число:");
+//int x;
+//int.TryParse(Console.ReadLine(), out x);
+//Console.Write("Введите 2 число:");
+//int y;
+//int.TryParse(Console.ReadLine(), out y);
+//Console.WriteLine(x+" "+y);
+//Swap(ref x,ref y);
+//Console.WriteLine(x + " " + y);
+
 
 
 //2
@@ -62,11 +72,16 @@
 //Задача на использование ключевого слова params:
 //Напишите метод CalculateAverage, который принимает переменное количество аргументов типа double с помощью ключевого слова params.Метод должен вычислять и возвращать среднее арифметическое переданных чисел. Проверьте работу метода, вызывая его с различным числом аргументов и выводя результаты
 
-//double CalculateAverage(params double[] mas);
+//double CalculateAverage(params double[] mas)
 //{
 //    double s = 0;
-
+//    for (int i = 0; i < mas.Length; i++) s += mas[i];
+//    return s / mas.Length;
 //}
+
+//Console.WriteLine(CalculateAverage(4,2,7,5));
+//Console.WriteLine(CalculateAverage(8,5,12,45,7,9));
+
 
 //4
 //Задача, комбинирующая ключевые слова ref, out и params:
@@ -111,7 +126,7 @@
 //        if(n%5!=0) 
 //        {
 //            isTrue = false;
-//        break;
+//            break;
 //        }
 //        n /= 5;
 //    }
@@ -176,7 +191,7 @@
 //        Console.WriteLine(i);
 //        count++;
 //    }
-        
+
 //}
 //Console.WriteLine(count);
 //stopwatch.Stop();
