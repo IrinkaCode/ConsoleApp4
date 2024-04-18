@@ -63,11 +63,11 @@ while (true);
 void Main()
 {
     Console.Write("Введите список чисел,разделенных пробелом: ");
-    string input = Console.ReadLine();
+    string n = Console.ReadLine();
 
     try
     {
-        string[] numbers = input.Split(' ');
+        string[] numbers = n.Split(' ');
         int sum = 0;
 
         foreach (string number in numbers)
@@ -79,6 +79,6 @@ void Main()
     }
     catch (FormatException)
     {
-        Console.WriteLine("Ошибка: Некорректный ввод. Пожалуйста, введите только цифры, разделенные пробелами.");
+        Console.WriteLine("Некорректный ввод. Пожалуйста, введите только цифры, разделенные пробелами.");
     }
 }

@@ -112,7 +112,7 @@ Console.WriteLine($"Максимальное значение массива: {m
 int[,] SumMas(int[,] mas1, int[,] mas2) //функция принимает два массива в качестве аргументов и возвращает новый массив, который представляет собой сумму элементов соответствующих позиций из двух входных массивов.
 {
     int n = mas1.GetLength(0);
-    int m = mas1.GetLength(1);
+    int m = mas2.GetLength(1);
     int[,] sumMas = new int[n, m];
 
     for (int i = 0; i < n; i++)
@@ -146,7 +146,7 @@ int FindMaxValue(int[,] NewMas)      //максимальное значение
     return maxVal;
 }
 
-void PrintArray(int[,]  NewMas)       //выводит новый двумерный массив на консоль.
+void PrintArray(int[,] NewMas)       //выводит новый двумерный массив на консоль.
 {
     int n = NewMas.GetLength(0);
     int m = NewMas.GetLength(1);
