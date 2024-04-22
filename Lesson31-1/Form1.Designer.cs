@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            comboBox1 = new ComboBox();
-            button1 = new Button();
             button2 = new Button();
+            button1 = new Button();
+            comboBox1 = new ComboBox();
             textBox1 = new TextBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
             label1 = new Label();
@@ -78,16 +78,15 @@
             panel1.Size = new Size(482, 51);
             panel1.TabIndex = 0;
             // 
-            // comboBox1
+            // button2
             // 
-            comboBox1.BackColor = SystemColors.MenuText;
-            comboBox1.ForeColor = SystemColors.InactiveBorder;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Обычный", "Программист", "Инженер" });
-            comboBox1.Location = new Point(12, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 0;
+            button2.Dock = DockStyle.Right;
+            button2.Location = new Point(457, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(25, 51);
+            button2.TabIndex = 2;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -98,15 +97,16 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // comboBox1
             // 
-            button2.Dock = DockStyle.Right;
-            button2.Location = new Point(457, 0);
-            button2.Name = "button2";
-            button2.Size = new Size(25, 51);
-            button2.TabIndex = 2;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            comboBox1.BackColor = SystemColors.MenuText;
+            comboBox1.ForeColor = SystemColors.InactiveBorder;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Обычный", "Программист", "Инженер" });
+            comboBox1.Location = new Point(12, 12);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 0;
             // 
             // textBox1
             // 
