@@ -6,5 +6,10 @@ namespace Lesson25_2_DZ_
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
