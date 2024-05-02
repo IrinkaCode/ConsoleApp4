@@ -54,7 +54,7 @@
 
 //Задание 2.
 //Создайте класс, для работы со строкой, содержащий методы переворота строки, проверки на палиндром, разбиения строки на части, переводящий всю строку в верхний регистр или нижний, режущий строку по индексу элемента, производящий поиск по слову.
-                             // дописать из гитхаба 2 вариант который короче и переписать полностью верх до класса
+// дописать из гитхаба 2 вариант который короче и переписать полностью верх до класса
 //using System.Text;
 //Console.Write("Введите строку: ");
 //MyString myString=new MyString(Console.ReadLine()!);
@@ -120,7 +120,21 @@
 //        else throw new Exception("Выход за границы строки");     
 //    }
 //    public bool Find(string word) => str.Contains(word);
-//}
 
 
+
+using ArrrayLibrary;
+
+ArrayClass arrayClass = new ArrayClass(typeof(int), 10);
+arrayClass.Fill(10, 100);
+Console.WriteLine();
+ArrayClass arrayClass1 = new ArrayClass(typeof(double), 10);
+arrayClass.Fill(10, 100);
+Console.WriteLine();
+ArrayClass arrayClass3 = new ArrayClass(typeof(string), 10);
+arrayClass.Fill(10);
+Console.WriteLine();
+ArrayClass arrayClass4 = new ArrayClass(typeof(bool), 10);
+arrayClass.Fill(10);
+Console.WriteLine();
 
