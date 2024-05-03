@@ -9,6 +9,7 @@ namespace Lesson35_2
         {
             InitializeComponent();
             ac = 0;
+            op = "";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace Lesson35_2
             }
             if (char.Parse(btn.Text) >= '1' && char.Parse(btn.Text) <= '9')
             {
-                if(op!="") lbresult.Text="")
+                if (op != "") lbresult.Text = "";
                 if (fd)
                 {
                     lbresult.Text = btn.Text;
@@ -37,12 +38,14 @@ namespace Lesson35_2
             }
             if (char.Parse(btn.Text) == '0')
             {
+                if (op != "") lbresult.Text = "";
                 if (fd) lbresult.Text = btn.Text;
                 if (lbresult.Text != "0") lbresult.Text += btn.Text;
                 return;
             }
-            if (char.Parse(btn.Text) == ',')
+            if (btn.Text == ",")
             {
+                if (op != "") lbresult.Text = "";
                 if (fd)
                 {
                     lbresult.Text = "0,";
@@ -81,15 +84,16 @@ namespace Lesson35_2
                     {
                         case '+': { ac += n; op = "+"; } break;
                         case '-': { ac -= n; op = "-"; } break;
-                        case '=': switch (op)
+                        case '=':
                             {
-                                case "+": { ac += n;} break;
-                                    case "-": { ac -= n;} break;
+                                switch (op)
+                                {
+                                    case "+": { ac += n; } break;
+                                    case "-": { ac -= n; } break;
+                                }
+                                op = "";
                             }
-                            op = "";
-
-                                break;
-
+                            break;
                     }
                     lbresult.Text = ac.ToString("N");
                 }
