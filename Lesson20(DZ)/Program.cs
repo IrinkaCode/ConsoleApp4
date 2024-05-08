@@ -43,73 +43,53 @@ Console.WriteLine("3 - Шифрование по ключу");
 Console.WriteLine("4 - Инверсия");
 
 int choice = int.Parse(Console.ReadLine());
-
-Console.WriteLine("Введите второе число: ");
-int num2= int.Parse(Console.ReadLine()!);
-Console.WriteLine(Mult(num1,num2));
-Console.WriteLine(Add(num1,num2));
-Console.WriteLine(Key(num1, num2));
-Console.WriteLine(Invert(num1));
-
-//switch (choice)
-//{
-//    case 1:
-//        Console.Write("Введите число для умножения: ");
-//        int multiplication = int.Parse(Console.ReadLine()!);
-//        int resultMultiply = num1 & num2;
-//        Console.WriteLine($"Результат умножения: {resultMultiply}");
-//        break;
-
-//    case 2:
-
-//        Console.Write("Введите число для сложения: ");
-//        int addend = int.Parse(Console.ReadLine()!);
-//        int resultAdd = num1 | num2;
-//        Console.WriteLine($"Результат сложения: {resultAdd}");
-//        break;
-
-//    case 3:
-//        Console.Write("Введите ключ шифрования: ");
-//        int key = int.Parse(Console.ReadLine()!);
-//        int encryption = num1 ^ num2;
-//        Console.WriteLine($"Зашифрованное число: {encryption}");
-//        break;
-
-//    case 4:
-//        int inversion = ~num1;
-//        Console.WriteLine($"Инверсия числа: {inversion}");
-//        break;
-
-//    default:
-//        Console.WriteLine("Некорректный выбор операции.");
-//        break;
-//}
+int num2 = 0;
 int Mult(int num1, int num2)
-{   
-    int res = num1 & num2;
-    return res;
-    
+{
+    return num1 & num2;
 }
 
 int Add(int num1, int num2)
 {
-    int res= num1 | num2;
-    return res;
+    return num1 | num2;
 }
 
 int Key(int num1, int num2)
 {
-    int res = num1 ^ num2;
-    return res;
+    return num1 ^ num2;
 }
 
 int Invert(int num1)
 {
-    int res = ~num1;
-    return res;
+    return ~num1;
 }
 
-
+if (choice == 1)
+{
+    Console.Write("Введите второе число: ");
+    num2 = int.Parse(Console.ReadLine()!);
+    Console.WriteLine(Mult(num1, num2));
+}
+else if (choice == 2)
+{
+    Console.Write("Введите второе число: ");
+    num2 = int.Parse(Console.ReadLine()!);
+    Console.WriteLine(Add(num1, num2));
+}
+else if (choice == 3)
+{
+    Console.Write("Введите второе число: ");
+    num2 = int.Parse(Console.ReadLine()!);
+    Console.WriteLine(Key(num1, num2));
+}
+else if (choice == 4)
+{
+    Console.WriteLine(Invert(num1));
+}
+else
+{
+    Console.WriteLine("Некорректный выбор операции.");
+}
 
 
 
