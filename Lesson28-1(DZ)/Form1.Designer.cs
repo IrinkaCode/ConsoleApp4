@@ -74,6 +74,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Form1";
             Text = "Генератор цитат";
             ResumeLayout(false);
