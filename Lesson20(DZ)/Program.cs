@@ -33,63 +33,63 @@
 //Напишите программу, которая выполняет логическое побитовое умножение, сложение, шифрование по ключу и инверсию.
 //Пользователь вводит число, затем вид операции с числом и получает результат в зависимости от своего выбора.
 
-Console.Write("Введите целое число: ");
-int num1 = int.Parse(Console.ReadLine()!);
+//Console.Write("Введите целое число: ");
+//int num1 = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine("Выберите операцию: ");
-Console.WriteLine("1 - Логическое побитовое умножение");
-Console.WriteLine("2 - Логическое побитовое сложение");
-Console.WriteLine("3 - Шифрование по ключу");
-Console.WriteLine("4 - Инверсия");
+//Console.WriteLine("Выберите операцию: ");
+//Console.WriteLine("1 - Логическое побитовое умножение");
+//Console.WriteLine("2 - Логическое побитовое сложение");
+//Console.WriteLine("3 - Шифрование по ключу");
+//Console.WriteLine("4 - Инверсия");
 
-int choice = int.Parse(Console.ReadLine());
-int num2 = 0;
-int Mult(int num1, int num2)
-{
-    return num1 & num2;
-}
+//int choice = int.Parse(Console.ReadLine());
+//int num2 = 0;
+//int Mult(int num1, int num2)
+//{
+//    return num1 & num2;
+//}
 
-int Add(int num1, int num2)
-{
-    return num1 | num2;
-}
+//int Add(int num1, int num2)
+//{
+//    return num1 | num2;
+//}
 
-int Key(int num1, int num2)
-{
-    return num1 ^ num2;
-}
+//int Key(int num1, int num2)
+//{
+//    return num1 ^ num2;
+//}
 
-int Invert(int num1)
-{
-    return ~num1;
-}
+//int Invert(int num1)
+//{
+//    return ~num1;
+//}
 
-if (choice == 1)
-{
-    Console.Write("Введите второе число: ");
-    num2 = int.Parse(Console.ReadLine()!);
-    Console.WriteLine(Mult(num1, num2));
-}
-else if (choice == 2)
-{
-    Console.Write("Введите второе число: ");
-    num2 = int.Parse(Console.ReadLine()!);
-    Console.WriteLine(Add(num1, num2));
-}
-else if (choice == 3)
-{
-    Console.Write("Введите второе число: ");
-    num2 = int.Parse(Console.ReadLine()!);
-    Console.WriteLine(Key(num1, num2));
-}
-else if (choice == 4)
-{
-    Console.WriteLine(Invert(num1));
-}
-else
-{
-    Console.WriteLine("Некорректный выбор операции.");
-}
+//if (choice == 1)
+//{
+//    Console.Write("Введите второе число: ");
+//    num2 = int.Parse(Console.ReadLine()!);
+//    Console.WriteLine(Mult(num1, num2));
+//}
+//else if (choice == 2)
+//{
+//    Console.Write("Введите второе число: ");
+//    num2 = int.Parse(Console.ReadLine()!);
+//    Console.WriteLine(Add(num1, num2));
+//}
+//else if (choice == 3)
+//{
+//    Console.Write("Введите второе число: ");
+//    num2 = int.Parse(Console.ReadLine()!);
+//    Console.WriteLine(Key(num1, num2));
+//}
+//else if (choice == 4)
+//{
+//    Console.WriteLine(Invert(num1));
+//}
+//else
+//{
+//    Console.WriteLine("Некорректный выбор операции.");
+//}
 
 
 
