@@ -1,10 +1,16 @@
 namespace Lesson28_2_DZ_
 {
-    public partial class Form1 : Form
+    public partial class TextBox : Form
     {
-        public Form1()
+        public TextBox()
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+   
