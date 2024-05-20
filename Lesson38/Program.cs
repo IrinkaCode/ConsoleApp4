@@ -5,33 +5,35 @@
 //2
 //Напишите программу, которая запрашивает у пользователя его имя и выводит на экран приветствие с использованием введенного имени.
 
-//Console.Write("введите свое имя: ");
-//string name = Console.ReadLine();
+//Console.Write("Введите свое имя: ");
+//string name = Console.ReadLine()!;
 //Console.WriteLine("Здравствуйте, " + name);
 
 //3
-//Напишите программу, которая запрашивает у пользователя его имя и выводит на экран приветствие с использованием введенного имени.
+//Напишите программу, которая находит сумму двух чисел, введенных пользователем, и выводит результат на экран.
 
 //Console.Write("Введите первое число: ");
-//double num1=double.Parse(Console.ReadLine()!);
+//double num1 = double.Parse(Console.ReadLine()!);
 //Console.Write("Введите второе число: ");
 //double num2 = double.Parse(Console.ReadLine()!);
-//double sum=num1 + num2;
+//double sum = num1 + num2;
 //Console.Write($"Сумма чисел {num1} и {num2} равна: {sum}");
+
 
 //4
 // Напишите программу, которая определяет, является ли введенное пользователем число четным или нечетным.
 
 //Console.Write("Введите число: ");
-//double num=double.Parse(Console.ReadLine()!);
+//double num = double.Parse(Console.ReadLine()!);
 //if (num % 2 == 0)
 //{
 //    Console.WriteLine("Число четное");
 //}
-////else
+//else
 //{
 //    Console.WriteLine("Число нечетное");
 //}
+
 
 //5
 //Напишите программу, которая находит наибольшее число из трех введенных пользователем чисел и выводит его на экран.
@@ -49,6 +51,7 @@
 
 //Console.WriteLine("Наибольшее число: " + max);
 
+
 //6
 //Напишите программу, которая вычисляет факториал введенного пользователем числа и выводит результат на экран.
 //Console.Write("Введите число: ");
@@ -60,6 +63,7 @@
 //    Fact *= i;
 //}
 //Console.WriteLine($"факториал {n}={Fact}");
+
 
 //7
 //Напишите программу, которая находит сумму всех чисел от 1 до 100 и выводит результат на экран.
@@ -77,7 +81,7 @@
 //8
 //Напишите программу, которая считывает строку с клавиатуры и выводит на экран количество символов в этой строке
 //Console.Write("Введите строку: ");
-//string str = Console.ReadLine();
+//string str = Console.ReadLine()!;
 //int count = str.Length;
 //Console.WriteLine("Количество символов в строке: " + count);
 
@@ -124,8 +128,8 @@
 //Console.Write("Введите третье число: ");
 //double num3 = double.Parse(Console.ReadLine()!);
 
-//double avg = (num1 + num2+num3)/3;
-//Console.Write($"Среднее арифметическое трех чисел {num1}, {num2} и {num3} равна: {avg}");
+//double avg = (num1 + num2 + num3) / 3;
+//Console.Write($"Среднее арифметическое трех чисел {num1}, {num2} и {num3} равно: {avg}");
 
 
 //11
@@ -144,13 +148,15 @@
 
 //Console.WriteLine("Наименьшее число: " + min);
 
+
 //12
 //Напишите программу, которая выводит строку введенную пользователем в обратном порядке.
 
 //Console.Write("Введите строку: ");
-//string str = Console.ReadLine();
+//string str = Console.ReadLine()!;
 //for (int i = str.Length - 1; i >= 0; i--)
 //    Console.Write(str[i]);
+
 
 //13
 //Напишите программу, которая определяет, является ли введенное пользователем число палиндромом (читается одинаково слева направо и справа налево).
@@ -200,6 +206,7 @@
 //    Console.WriteLine($"{num} не является совершенным числом.");
 //}
 
+
 //15
 //Напишите программу, которая находит все простые числа от 1 до 100 и выводит их на экран
 
@@ -212,7 +219,7 @@
 //        Console.Write(i + " ");
 //    }
 //}
-//static bool IsPrime(int number)
+//bool IsPrime(int number)
 //{
 //    if (number <= 1)
 //    {
@@ -230,6 +237,7 @@
 //    return true;
 //}
 
+
 //16
 //Напишите программу, которая находит сумму всех четных чисел от 1 до 100 и выводит результат на экран.
 
@@ -240,11 +248,12 @@
 //}
 //Console.WriteLine("Сумма всех четных чисел от 1 до 100: " + sum);
 
+
 //17
 //Напишите программу, которая проверяет, является ли введенное пользователем слово панграммой (содержит все буквы алфавита). 
 
 //Console.Write("Введите слово: ");
-//string word = Console.ReadLine().ToLower();
+//string word = Console.ReadLine()!.ToLower();
 //bool isPangram = IsPangram(word);
 
 //if (isPangram)
@@ -255,7 +264,7 @@
 //{
 //    Console.WriteLine("Введенное слово не является панграммой.");
 //}
-//static bool IsPangram(string word)
+//bool IsPangram(string word)
 //{
 //    string alphabet = "abcdefghijklmnopqrstuvwxyz";
 //    foreach (char letter in alphabet)
@@ -268,20 +277,21 @@
 //    return true;
 //}
 
+
 //18
 //Напишите программу, которая находит наименьшее общее кратное двух чисел, введенных пользователем, и выводит результат на экран 
 
 //Console.Write("Введите первое число: ");
-//int num1 = int.Parse(Console.ReadLine());
+//int num1 = int.Parse(Console.ReadLine()!);
 //Console.Write("Введите второе число: ");
-//int num2 = int.Parse(Console.ReadLine());
+//int num2 = int.Parse(Console.ReadLine()!);
 
 //int lcm = FindLCM(num1, num2);
 
 //Console.WriteLine($"Наименьшее общее кратное чисел {num1} и {num2} равно: {lcm}");
 
 
-//static int FindLCM(int a, int b)
+//int FindLCM(int a, int b)
 //{
 //    int max = Math.Max(a, b);
 //    int min = Math.Min(a, b);
@@ -305,7 +315,7 @@
 //while (true)
 //{
 //    Console.Write("Введите число: ");
-//    int number = Convert.ToInt32(Console.ReadLine());
+//    int number = int.Parse(Console.ReadLine()!);
 //    if (number < 0)
 //        break;
 //    sum += number;
@@ -315,8 +325,12 @@
 
 //20
 //Создайте одномерный массив длиной 8 элементов, вручную заполните его числами от -10 до 10
+//int[] mas = { 4, -7, 3, 9, 2, -5, 8, 10 };
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    Console.Write(mas[i] + " ");
+//}
 
-//int[] mas = { 4, -7, 3, 9, 2, -5, 8, 10};
 
 //21
 //Найти сумму элементов в массиве.
@@ -357,8 +371,9 @@
 //    if (mas[i] < min) min = mas[i];
 //    sum += mas[i];
 //}
-//Console.WriteLine("Max=" + max);
-//Console.WriteLine("Min=" + min);
+//Console.WriteLine("Max = " + max);
+//Console.WriteLine("Min = " + min);
+
 
 //24
 //Проверить, является ли массив “палиндромом”.
@@ -393,6 +408,14 @@
 //    {4, -5, 3, 6, 10},
 //    {-10, 2, 4, 6, 8}
 //};
+//for (int i = 0; i < 5; i++)
+//{
+//    for (int j = 0; j < 5; j++)
+//    {
+//        Console.Write(mas[i, j] + " ");
+//    }
+//    Console.WriteLine();
+//}
 
 
 //26
@@ -416,6 +439,7 @@
 //    Console.WriteLine($"Сумма элементов в строке {i + 1}: {sum}");
 //}
 
+
 //27
 //Найти сумму элементов по диагонали матрицы.
 
@@ -434,21 +458,22 @@
 //    sum += mas[i, i];
 //    sum1 += mas[i, 4 - i];
 //}
-//Console.WriteLine("Сумма элементов по диагонали матрицы: " + sum);
-//Console.WriteLine("Сумма элементов по диагонали матрицы: " + sum1);
+//Console.WriteLine("Сумма элементов по главной диагонали матрицы: " + sum);
+//Console.WriteLine("Сумма элементов по побочной диагонали матрицы: " + sum1);
+
 
 //28
 // Создать массив массивов
 //int[][] mas = new int[4][];
-
 //mas[0] = new int[] { 7, -4, 22, -12 };
 //mas[1] = new int[] { 1 };
-//mas[2] = new int[] { 13, -20, -6,-9 };
+//mas[2] = new int[] { 13, -20, -6, -9 };
 //mas[3] = new int[] { 0, 16, 5 };
 //for (int i = 0; i < mas.Length; i++)
 //{
 //    Console.WriteLine(string.Join(", ", mas[i]));
 //}
+
 
 //29
 //Найти среднее арифметическое для каждого подмассива.
@@ -480,6 +505,7 @@
 //{
 //    Console.WriteLine(string.Join(", ", mas[i]));
 //}
+//Console.WriteLine();
 
 //int[] temp = mas[0];
 //mas[0] = mas[1];
@@ -495,6 +521,7 @@
 //    }
 //    Console.WriteLine();
 //}
+
 
 //31
 //Найти наибольший и наименьший элементы в каждом подмассиве.
@@ -529,6 +556,7 @@
 //    Console.WriteLine($"Наибольший элемент: {max}");
 //}
 
+
 //32
 //Написать локальную функцию принимающую два числа и возвращающую их произведение.
 //double Mult(double a, double b)
@@ -541,7 +569,7 @@
 //double.TryParse(Console.ReadLine(), out a);
 //Console.Write("Введите b: ");
 //double.TryParse(Console.ReadLine(), out b);
-//Console.WriteLine($"Произведение чисел {a} и {b} равно {Mult(a,b)}");
+//Console.WriteLine($"Произведение чисел {a} и {b} равно {Mult(a, b)}");
 
 
 //33
@@ -576,7 +604,6 @@
 //34
 //Написать локальную функцию для проверки, является ли строка палиндромом
 //using System;
-
 //bool IsPalindrome(string str)
 //{
 //    int left = 0;
@@ -606,8 +633,8 @@
 //}
 
 
-//35
-//Написать локальную функцию для вычисления факториала числа
+////35
+////Написать локальную функцию для вычисления факториала числа
 //long Factorial(int x)
 //{
 //    long F = 1;
@@ -637,10 +664,11 @@
 //int b = int.Parse(Console.ReadLine()!);
 //Console.WriteLine($"Наибольший общий делитель чисел {a} и {b} равен {GCD(a, b)}");
 
+
 //37
 //Создать класс для представления геометрической фигуры (например, прямоугольника) и методы для вычисления ее периметра и площади.
-//Console.Write("Введите x: ");
 //double x, y;
+//Console.Write("Введите x: ");
 //double.TryParse(Console.ReadLine(), out x);
 //Console.Write("Введите y: ");
 //double.TryParse(Console.ReadLine(), out y);
@@ -659,13 +687,14 @@
 //    }
 //    public double Perimetr()
 //    {
-//        return (X + Y)*2;
+//        return (X + Y) * 2;
 //    }
-//    public double Square() 
+//    public double Square()
 //    {
 //        return (X * Y);
 //    }
 //}
+
 
 //38
 //Реализовать класс для работы с числами и методы для выполнения арифметических операций.
@@ -704,7 +733,6 @@
 //        return X / Y;
 //    }
 //    public double Sub() => X - Y;
-
 //}
 
 
