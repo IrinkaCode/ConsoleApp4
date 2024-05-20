@@ -710,72 +710,324 @@
 
 //39
 //Написать класс для управления банковским счетом с методами для пополнения и снятия средств.
-class BankAccount
-{
-    private decimal balance;
 
-    public BankAccount(decimal Balance)
-    {
-        if (balance < 0)
-        {
-            throw new ArgumentException("Баланс не может быть отрицательным!");
-        }
+//using System;
+//public class BankAccount
+//{
+//    private decimal balance;
+//    public BankAccount(decimal Balance)
+//    {
+//        if (balance < 0)
+//        {
+//            throw new ArgumentException("Баланс не может быть отрицательным!");
+//        }
 
-        balance = Balance;
-    }
+//        balance = Balance;
+//    }
+//    public void Deposit(decimal amount)
+//    {
+//        if (amount < 0)
+//        {
+//            throw new ArgumentException("Баланс не может быть отрицательным!");
+//        }
 
-    public void Deposit(decimal amount)
-    {
-        if (amount < 0)
-        {
-            throw new ArgumentException("Баланс не может быть отрицательным!");
-        }
+//        balance += amount;
+//    }
+//    public bool Withdraw(decimal amount)
+//    {
+//        if (amount < 0)
+//        {
+//            throw new ArgumentException("Баланс не может быть отрицательным!");
+//        }
 
-        balance += amount;
-    }
+//        if (balance >= amount)
+//        {
+//            balance -= amount;
+//            return true;
+//        }
 
-    public bool Withdraw(decimal amount)
-    {
-        if (amount < 0)
-        {
-            throw new ArgumentException("Баланс не может быть отрицательным!");
-        }
+//        return false;
+//    }
+//    public decimal GetBalance()
+//    {
+//        return balance;
+//    }
 
-        if (balance >= amount)
-        {
-            balance -= amount;
-            return true;
-        }
+//    public void PrintAccountInfo()
+//    {
+//        Console.WriteLine($"Банковский счет: {balance} рублей");
+//    }
+//}
 
-        return false;
-    }
+//public class Program
+//{
+//    public static void Main(string[] args)
+//    {
+//        BankAccount account = new BankAccount(1000);
+//        account.PrintAccountInfo();
 
-    public decimal GetBalance()
-    {
-        return balance;
-    }
+//        account.Deposit(500);
+//        account.PrintAccountInfo();
 
-    public void PrintAccountInfo()
-    {
-        Console.WriteLine($"Банковский счет: {balance} рублей");
-    }
-}
+//        account.Withdraw(200);
+//        account.PrintAccountInfo();
 
-class Program
-{
-    public static void Main(string[] args)
-    {
-        BankAccount account = new BankAccount(1000);
-        account.PrintAccountInfo();
+//        bool success = account.Withdraw(2000);
+//        Console.WriteLine($"Снятие денежных средств: {success}");
+//        account.PrintAccountInfo();
+//    }
+//}
 
-        account.Deposit(500);
-        account.PrintAccountInfo();
 
-        account.Withdraw(200);
-        account.PrintAccountInfo();
+//40
+//Реализовать класс для работы с матрицами и методы для выполнения операций сложения, умножения и транспонирования.
 
-        bool success = account.Withdraw(2000);
-        Console.WriteLine($"Снятие денежных средств: {success}");
-        account.PrintAccountInfo();
-    }
-}
+//using System;
+//namespace MatrixMxN
+//{
+//    class Matrix
+//    {
+//        int[,] data = new int[1, 1];
+//        int m = 1;
+//        int n = 1;
+//        public Matrix(int m, int n)
+//        {
+//            Generate(m, n);
+//        }
+//        public void Generate(int m, int n)
+//        {
+//            this.m = m;
+//            this.n = n;
+//            data = new int[m, n]; //создаем пустой массив
+//            Random random = new Random();
+//            //заполняем массив данными
+//            for (int i = 0; i < m; i++)
+//                for (int j = 0; j < n; j++)
+//                {
+//                    data[i, j] = random.Next(10, 100);
+//                }
+//        }
+//        public int[,] Transpose()
+//        {
+//            int[,] transpose = new int[n, m];
+//            for (int i = 0; i < m; i++)
+//            {
+//                for (int j = 0; j < n; j++)
+//                {
+//                    transpose[j, i] = data[i, j];
+//                }
+//            }
+//            return transpose;
+//        }
+//        public float Average()
+//        {
+//            if (data == null)
+//            {
+//                Console.WriteLine("Матрица не существует!");
+//                return -1;
+//            }
+
+//            float sum = 0;
+//            for (int i = 0; i < m; i++)
+//            {
+//                for (int j = 0; j < n; j++)
+//                {
+//                    sum += data[i, j];
+//                }
+//            }
+//            return sum / (data.GetLength(0) * data.GetLength(1));
+//        }
+//        public string GetInfo(bool isTranspose, bool needAlInfo)
+//        {
+//            string matrix = isTranspose ? "----Транспонированная матрица------\n" : "----Исходная матрица------\n";
+//            var array = isTranspose ? Transpose() : data;
+//            int row = isTranspose ? n : m;
+//            int col = isTranspose ? m : n;
+
+//            if (needAlInfo)
+//            {
+//                matrix += isTranspose ? $"Размеры: {n}x{m}\n" : $"Размеры: {m}x{n}\n";
+//                matrix += $"Среднее значение {Average()} \n";
+//            }
+
+//            for (int i = 0; i < row; i++)
+//            {
+//                for (int j = 0; j < col; j++)
+//                {
+//                    matrix += array[i, j].ToString() + "\t";
+//                }
+//                matrix += "\n";
+//            }
+//            return matrix;
+//        }
+//    }
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int m = 0;
+//            int n = 0;
+//            int errors = 0;
+//            while ((m == 0) && (n == 0))
+//            {
+//                Console.WriteLine("Введите желаемую размерность матрицы в формате MхN, где M и N - целые числа");
+//                Console.WriteLine("Например, 10x5");
+//                Console.Write("Размерность матрицы: ");
+//                string[] strings = Console.ReadLine().Split('x');
+//                if ((strings.Length < 2) || (int.TryParse(strings[0], out m) == false) || (int.TryParse(strings[1], out n) == false))
+//                {
+//                    errors++;
+//                    Console.WriteLine($"Допущено ошибок ввода: {errors}");
+//                    if ((errors > 1) && (errors < 4))
+//                    {
+//                        Console.Beep();
+//                        Console.ForegroundColor = ConsoleColor.Blue;
+//                        Console.WriteLine("Не издевайся надо мной! Пиши так: целое число, затем - маленький ИКС (английская раскладка!), затем - опять целое число. Пробелы ставить не надо");
+//                        Console.ForegroundColor = ConsoleColor.White;
+//                        continue;
+//                    }
+//                    else
+//                        if (errors == 4)
+//                    {
+//                        Console.Beep();
+//                        Console.Beep();
+//                        Console.ForegroundColor = ConsoleColor.Red;
+//                        Console.WriteLine("Ты безнадежен, человек. Закрой программу и иди домой");
+//                        Console.ForegroundColor = ConsoleColor.White;
+//                        break;
+//                    }
+//                }
+//            }
+
+//            if (errors < 4)
+//            {
+//                Matrix matrix = new Matrix(m, n);
+//                Console.WriteLine(matrix.GetInfo(false, true));
+//                Console.WriteLine(matrix.GetInfo(true, false));
+//            }
+//        }
+//    }
+//}
+
+
+//Последняя задача - МАГИЧЕСКИЙ КВАДРАТ
+//Дан массив чисел 3Х3 со значениями от 1 до 10.
+//Задача:
+//Написать метод проверяющий, является ли данный числовой массив - магическим квадратом и возвращающий true если это так и false в противном случае.
+//Магический квадрат - матрица (или массив), в котором:суммы всех элементов каждой из строк, суммы всех элементов каждого столбца и суммы диагоналей равны.
+
+////1 вариант
+//Console.Write("Строка: ");
+//int m = int.Parse(Console.ReadLine()!);
+//Console.Write("Столбец: ");
+//int k = int.Parse(Console.ReadLine()!);
+
+
+//int[,] matr = new int[m, k]; //матрица 3х3
+//int i, j; //переменные для счетчиков
+//int p;
+//p = m + k + 2;
+
+//int[] summ = new int[p]; //массив для записей различных сумм (строк, столбцов, диагоналей)
+//for (i = 0; i < p; i++) summ[i] = 0; //все суммы обнуляем
+
+////забиваем массив числами
+//for (i = 0; i < m; i++)
+//    for (j = 0; j < k; j++)
+//    {
+//        Console.Write("matr[" + i + "][" + j + "] = ");
+//        matr[i, j] = int.Parse(Console.ReadLine()!);
+//        summ[i] += matr[i, j]; //суммы строк
+//        summ[j + m] += matr[i, j]; //суммы столбцов
+//        if (i == j) summ[p - 2] += matr[i, j]; //сумма главной диагонали
+//        if (i + j == (m - 1)) summ[p - 1] += matr[i, j]; //сумма побочной диагонали
+//    }
+
+////считаем все суммы
+//for (i = 0; i < m; i++)
+//{
+//    for (j = 0; j < k; j++)
+//        Console.Write(matr[i, j] + "\t");
+//    Console.WriteLine();
+//}
+
+//string result = "Магический квадрат!!!";
+//for (i = 0; i < (p - 1); i++)
+//{
+//    Console.WriteLine("summ[" + i + "] = " + summ[i]); //выводим суммы на экран
+//    if (summ[i] != summ[i + 1])  //проверяем равенство текущей и следующей
+//        result = "Не является магическим квадратом";
+//}
+//Console.WriteLine("summ[" + (p - 1) + "] = " + summ[p - 1]); //выводим на экран последний элемент массива с суммами (не выводили в цикле, что за границы массива не улететь)
+//Console.WriteLine(result); //выводим на экран строку с результатом
+
+
+
+//2 вариант
+//using System;
+//public class MagicSquareChecker
+//{
+//    public static bool IsMagicSquare(int[,] square)
+//    {
+//        // Сумма элементов магического квадрата
+//        int magicSum = 0;
+//        // Вычисление суммы элементов первой строки для определения магической суммы
+//        for (int i = 0; i < 3; i++)
+//        {
+//            magicSum += square[0, i];
+//        }
+//        // Проверка суммы элементов по строкам
+//        for (int row = 0; row < 3; row++)
+//        {
+//            int rowSum = 0;
+//            for (int col = 0; col < 3; col++)
+//            {
+//                rowSum += square[row, col];
+//            }
+//            if (rowSum != magicSum)
+//            {
+//                return false;
+//            }
+//        }
+//        // Проверка суммы элементов по столбцам
+//        for (int col = 0; col < 3; col++)
+//        {
+//            int colSum = 0;
+//            for (int row = 0; row < 3; row++)
+//            {
+//                colSum += square[row, col];
+//            }
+//            if (colSum != magicSum)
+//            {
+//                return false;
+//            }
+//        }
+//        // Проверка суммы элементов по диагоналям
+//        int diag1Sum = 0; // Главная диагональ
+//        int diag2Sum = 0; // Побочная диагональ
+//        for (int i = 0; i < 3; i++)
+//        {
+//            diag1Sum += square[i, i];
+//            diag2Sum += square[i, 2 - i];
+//        }
+
+//        if (diag1Sum != magicSum || diag2Sum != magicSum)
+//        {
+//            return false;
+//        }
+//        // Если все суммы совпали, то это магический квадрат
+//        return true;
+//    }
+//    public static void Main()
+//    {
+//        int[,] square = {
+//            { 2, 7, 6 },
+//            { 9, 5, 1 },
+//            { 4, 3, 6 }
+//        };
+
+//        bool isMagic = IsMagicSquare(square);
+//        Console.WriteLine("Is the square a magic square? " + (isMagic ? "Yes" : "No"));
+//    }
+//}
+
