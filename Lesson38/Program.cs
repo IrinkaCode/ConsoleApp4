@@ -419,3 +419,363 @@
 //27
 //Найти сумму элементов по диагонали матрицы.
 
+//int[,] mas = new int[5, 5]
+//{
+//    {1, 2, 3, 4, 8},
+//    {5, -10, 11, -2, 7},
+//    {-9, -1, 5, -3, 8},
+//    {4, -5, 3, 6, 10},
+//    {-10, 2, 4, 6, 8}
+//};
+//int sum = 0;
+//int sum1 = 0;
+//for (int i = 0; i < 5; i++)
+//{
+//    sum += mas[i, i];
+//    sum1 += mas[i, 4 - i];
+//}
+//Console.WriteLine("Сумма элементов по диагонали матрицы: " + sum);
+//Console.WriteLine("Сумма элементов по диагонали матрицы: " + sum1);
+
+//28
+// Создать массив массивов
+//int[][] mas = new int[4][];
+
+//mas[0] = new int[] { 7, -4, 22, -12 };
+//mas[1] = new int[] { 1 };
+//mas[2] = new int[] { 13, -20, -6,-9 };
+//mas[3] = new int[] { 0, 16, 5 };
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    Console.WriteLine(string.Join(", ", mas[i]));
+//}
+
+//29
+//Найти среднее арифметическое для каждого подмассива.
+//int[][] mas = new int[4][];
+//mas[0] = new int[] { 7, -4, 22, -12 };
+//mas[1] = new int[] { 1 };
+//mas[2] = new int[] { 13, -20, -6, -9 };
+//mas[3] = new int[] { 0, 16, 5 };
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    int sum = 0;
+//    for (int j = 0; j < mas[i].Length; j++)
+//    {
+//        sum += mas[i][j];
+//    }
+//    double avg = (double)sum / mas[i].Length;
+//    Console.WriteLine($"Среднее арифметическое подмассива {i + 1}: {avg}");
+//}
+
+
+//30
+//Поменять местами строки в подмассивах.
+//int[][] mas = new int[4][];
+//mas[0] = new int[] { 7, -4, 22, -12 };
+//mas[1] = new int[] { 1 };
+//mas[2] = new int[] { 13, -20, -6, -9 };
+//mas[3] = new int[] { 0, 16, 5 };
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    Console.WriteLine(string.Join(", ", mas[i]));
+//}
+
+//int[] temp = mas[0];
+//mas[0] = mas[1];
+//mas[1] = temp;
+//temp = mas[2];
+//mas[2] = mas[3];
+//mas[3] = temp;
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    for (int j = 0; j < mas[i].Length; j++)
+//    {
+//        Console.Write(mas[i][j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+//31
+//Найти наибольший и наименьший элементы в каждом подмассиве.
+//int[][] mas = new int[4][];
+//mas[0] = new int[] { 7, -4, 22, -12 };
+//mas[1] = new int[] { 1 };
+//mas[2] = new int[] { 13, -20, -6, -9 };
+//mas[3] = new int[] { 0, 16, 5 };
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    Console.WriteLine(string.Join(", ", mas[i]));
+//}
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    int min = mas[i][0];
+//    int max = mas[i][0];
+
+//    for (int j = 1; j < mas[i].Length; j++)
+//    {
+//        if (mas[i][j] < min)
+//        {
+//            min = mas[i][j];
+//        }
+//        if (mas[i][j] > max)
+//        {
+//            max = mas[i][j];
+//        }
+//    }
+
+//    Console.WriteLine($"Подмассив {i + 1}:");
+//    Console.WriteLine($"Наименьший элемент: {min}");
+//    Console.WriteLine($"Наибольший элемент: {max}");
+//}
+
+//32
+//Написать локальную функцию принимающую два числа и возвращающую их произведение.
+//double Mult(double a, double b)
+//{
+//    return a * b;
+//}
+
+//double a, b;
+//Console.Write("Введите а: ");
+//double.TryParse(Console.ReadLine(), out a);
+//Console.Write("Введите b: ");
+//double.TryParse(Console.ReadLine(), out b);
+//Console.WriteLine($"Произведение чисел {a} и {b} равно {Mult(a,b)}");
+
+
+//33
+//Реализовать локальную функцию для проверки, является ли число простым.
+//int number;
+//Console.Write("Введите а: ");
+//int.TryParse(Console.ReadLine(), out number);
+//bool IsPrime(int number)
+//{
+//    if (number <= 1) return false;
+//    if (number == 2) return true;
+//    if (number % 2 == 0) return false;
+
+//    var boundary = (int)Math.Floor(Math.Sqrt(number));
+
+//    for (int i = 3; i <= boundary; i += 2)
+//        if (number % i == 0)
+//            return false;
+
+//    return true;
+//}
+//if (IsPrime(number))
+//{
+//    Console.WriteLine($"{number} - простое число");
+//}
+//else
+//{
+//    Console.WriteLine($"{number} - не является простым числом");
+//}
+
+
+//34
+//Написать локальную функцию для проверки, является ли строка палиндромом
+//using System;
+
+//bool IsPalindrome(string str)
+//{
+//    int left = 0;
+//    int right = str.Length - 1;
+//    while (left < right)
+//    {
+//        if (str[left] != str[right])
+//        {
+//            return false;
+//        }
+//        left++;
+//        right--;
+//    }
+//    return true;
+//}
+//Console.Write("Введите строку: ");
+//string str = Console.ReadLine()!;
+//bool isPalindrome = IsPalindrome(str);
+
+//if (isPalindrome)
+//{
+//    Console.WriteLine($"Строка '{str}' является палиндромом.");
+//}
+//else
+//{
+//    Console.WriteLine($"Строка '{str}' не является палиндромом.");
+//}
+
+
+//35
+//Написать локальную функцию для вычисления факториала числа
+//long Factorial(int x)
+//{
+//    long F = 1;
+//    for (int i = 1; i <= x; i++) F *= i;
+//    return F;
+//}
+//Console.Write("Введите число: ");
+//int n;
+//int.TryParse(Console.ReadLine(), out n);
+//Console.WriteLine($"Факториал {n}:{Factorial(n)}");
+
+//36
+//Создать локальную функцию для нахождения наибольшего общего делителя двух чисел.
+//int GCD(int a, int b)
+//{
+//    while (b != 0)
+//    {
+//        var t = b;
+//        b = a % b;
+//        a = t;
+//    }
+//    return a;
+//}
+//Console.Write("Введите первое число: ");
+//int a = int.Parse(Console.ReadLine()!);
+//Console.Write("Введите второе число: ");
+//int b = int.Parse(Console.ReadLine()!);
+//Console.WriteLine($"Наибольший общий делитель чисел {a} и {b} равен {GCD(a, b)}");
+
+//37
+//Создать класс для представления геометрической фигуры (например, прямоугольника) и методы для вычисления ее периметра и площади.
+//Console.Write("Введите x: ");
+//double x, y;
+//double.TryParse(Console.ReadLine(), out x);
+//Console.Write("Введите y: ");
+//double.TryParse(Console.ReadLine(), out y);
+//Calculator calc = new Calculator(x, y);
+//Console.WriteLine(calc.Perimetr());
+//Console.WriteLine(calc.Square());
+//class Calculator
+//{
+//    private double X;
+//    private double Y;
+
+//    public Calculator(double x, double y)
+//    {
+//        X = x;
+//        Y = y;
+//    }
+//    public double Perimetr()
+//    {
+//        return (X + Y)*2;
+//    }
+//    public double Square() 
+//    {
+//        return (X * Y);
+//    }
+//}
+
+//38
+//Реализовать класс для работы с числами и методы для выполнения арифметических операций.
+
+//Console.Write("Введите x: ");
+//double x, y;
+//double.TryParse(Console.ReadLine(), out x);
+//Console.Write("Введите y: ");
+//double.TryParse(Console.ReadLine(), out y);
+//Calculator calc = new Calculator(x, y);
+//Console.WriteLine(calc.Add());
+//Console.WriteLine(calc.Sub());
+//Console.WriteLine(calc.Mult());
+//Console.WriteLine(calc.Div());
+
+//class Calculator
+//{
+//    private double X;
+//    private double Y;
+
+//    public Calculator(double x, double y)
+//    {
+//        X = x;
+//        Y = y;
+//    }
+//    public double Add()
+//    {
+//        return X + Y;
+//    }
+//    public double Mult()
+//    {
+//        return X * Y;
+//    }
+//    public double Div()
+//    {
+//        return X / Y;
+//    }
+//    public double Sub() => X - Y;
+
+//}
+
+
+//39
+//Написать класс для управления банковским счетом с методами для пополнения и снятия средств.
+class BankAccount
+{
+    private decimal balance;
+
+    public BankAccount(decimal Balance)
+    {
+        if (balance < 0)
+        {
+            throw new ArgumentException("Баланс не может быть отрицательным!");
+        }
+
+        balance = Balance;
+    }
+
+    public void Deposit(decimal amount)
+    {
+        if (amount < 0)
+        {
+            throw new ArgumentException("Баланс не может быть отрицательным!");
+        }
+
+        balance += amount;
+    }
+
+    public bool Withdraw(decimal amount)
+    {
+        if (amount < 0)
+        {
+            throw new ArgumentException("Баланс не может быть отрицательным!");
+        }
+
+        if (balance >= amount)
+        {
+            balance -= amount;
+            return true;
+        }
+
+        return false;
+    }
+
+    public decimal GetBalance()
+    {
+        return balance;
+    }
+
+    public void PrintAccountInfo()
+    {
+        Console.WriteLine($"Банковский счет: {balance} рублей");
+    }
+}
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        BankAccount account = new BankAccount(1000);
+        account.PrintAccountInfo();
+
+        account.Deposit(500);
+        account.PrintAccountInfo();
+
+        account.Withdraw(200);
+        account.PrintAccountInfo();
+
+        bool success = account.Withdraw(2000);
+        Console.WriteLine($"Снятие денежных средств: {success}");
+        account.PrintAccountInfo();
+    }
+}
