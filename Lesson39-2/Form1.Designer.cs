@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             listBox1Title = new ListBox();
             listBox2Author = new ListBox();
             listBox3Year = new ListBox();
@@ -42,11 +43,15 @@
             statusStrip1 = new StatusStrip();
             toolStripStatusLabelCountBook = new ToolStripStatusLabel();
             textBoxFilter = new TextBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            удалитьToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1.SuspendLayout();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // listBox1Title
             // 
+            listBox1Title.ContextMenuStrip = contextMenuStrip1;
             listBox1Title.FormattingEnabled = true;
             listBox1Title.Location = new Point(12, 59);
             listBox1Title.Name = "listBox1Title";
@@ -158,6 +163,21 @@
             textBoxFilter.Name = "textBoxFilter";
             textBoxFilter.Size = new Size(671, 27);
             textBoxFilter.TabIndex = 12;
+            textBoxFilter.TextChanged += textBoxFilter_TextChanged;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { удалитьToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(211, 56);
+            // 
+            // удалитьToolStripMenuItem
+            // 
+            удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
+            удалитьToolStripMenuItem.Size = new Size(210, 24);
+            удалитьToolStripMenuItem.Text = "Удалить";
+            удалитьToolStripMenuItem.Click += удалитьToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -181,6 +201,7 @@
             Text = "Учет библиотечных книг";
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
+            contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -201,5 +222,7 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabelCountBook;
         private TextBox textBoxFilter;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem удалитьToolStripMenuItem;
     }
 }
