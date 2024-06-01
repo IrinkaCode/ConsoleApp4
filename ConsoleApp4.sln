@@ -145,9 +145,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson40(Trees)", "Lesson40
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson40-1", "Lesson40-1\Lesson40-1.csproj", "{E0AFA621-3933-472D-8886-2C81E5F4BFB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson29(DZ)", "Lesson29(DZ)\Lesson29(DZ).csproj", "{450747C0-2E73-4BD6-9BFA-6484FFF56200}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson29(DZ)", "Lesson29(DZ)\Lesson29(DZ).csproj", "{450747C0-2E73-4BD6-9BFA-6484FFF56200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson31(DZ) - List", "Lesson31(DZ) - List\Lesson31(DZ) - List.csproj", "{CA9090AF-C2E5-4281-92CB-3F8A05FE8DD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson31(DZ) - List", "Lesson31(DZ) - List\Lesson31(DZ) - List.csproj", "{CA9090AF-C2E5-4281-92CB-3F8A05FE8DD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager_Popova_POB2312", "FileManager_Popova_POB2312\FileManager_Popova_POB2312.csproj", "{BE7CECA0-E231-49D6-90E3-910A9AC79870}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -447,6 +449,10 @@ Global
 		{CA9090AF-C2E5-4281-92CB-3F8A05FE8DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9090AF-C2E5-4281-92CB-3F8A05FE8DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9090AF-C2E5-4281-92CB-3F8A05FE8DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7CECA0-E231-49D6-90E3-910A9AC79870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7CECA0-E231-49D6-90E3-910A9AC79870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7CECA0-E231-49D6-90E3-910A9AC79870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7CECA0-E231-49D6-90E3-910A9AC79870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
