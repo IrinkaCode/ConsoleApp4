@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.Design;
+﻿using System;
 using System.Text;
 
 namespace FileManager_Popova_POB2312
@@ -23,12 +23,14 @@ namespace FileManager_Popova_POB2312
 
             UpdateConsole();
         }
+
         public static void UpdateConsole()
         {
-            DrawInputCommandField(_currentDir, 0, 35, WINDOW_WIDTH, 3);
+            DrawInputCommandField(_currentDir, 0, 33, WINDOW_WIDTH, 3);
 
             CommandInputProcess();
         }
+
         public static void DrawTree(int page, string startPath)
         {
             DirectoryInfo startDir = new DirectoryInfo(startPath);
@@ -72,6 +74,7 @@ namespace FileManager_Popova_POB2312
                     }
                 }
             }
+
             for (int i = 0; i < pages.GetLength(1); i++)
             {
                 Console.SetCursorPosition(1, i + 1);
@@ -79,11 +82,12 @@ namespace FileManager_Popova_POB2312
             }
 
             string currentPage = $"[ {page} / {pages.GetLength(0)} ]";
-            Console.SetCursorPosition(WINDOW_WIDTH / 2 - currentPage.Length/2, 25);
+            Console.SetCursorPosition(WINDOW_WIDTH / 2 - currentPage.Length / 2, 25);
             Console.WriteLine(currentPage);
 
             _tree = string.Empty;
-        }   
+        }
+
         public static void GetTree(DirectoryInfo currentDir, string indent, bool lastDirectory)
         {
             _tree += indent;
@@ -95,9 +99,10 @@ namespace FileManager_Popova_POB2312
             }
             else
             {
-                _tree += "├─";
+                _tree += "├──";
                 indent += "│  ";
             }
+
             _tree += currentDir.Name + '\n';
 
             DirectoryInfo[] subDirectories = currentDir.GetDirectories();
@@ -105,42 +110,39 @@ namespace FileManager_Popova_POB2312
             {
                 GetTree(subDirectories[i], indent, i == subDirectories.Length - 1);
             }
-
         }
-
 
         public static void CommandParser(string command)
         {
-            string[] commandParts=command.Split(" ");
+            string[] commandParts = command.Split(" ");
 
             switch (commandParts[0])
             {
                 case "cd":
-                    
-                    if (commandParts.Length==1)
+                    if (commandParts.Length == 1)
                     {
                         _currentDir = new DirectoryInfo(_currentDir).Root.FullName;
                     }
-                    else if(commandParts.Length==2) 
+                    else if (commandParts.Length == 2)
                     {
-                        if (commandParts[1]=="..")
+                        if (commandParts[1] == "..")
                         {
                             _currentDir = new DirectoryInfo(_currentDir).Parent.FullName;
-                            
                         }
-                        else if(commandParts[1] == "\\")
+                        else if (commandParts[1].Contains('\\'))
                         {
                             if (Directory.Exists(commandParts[1]))
                             {
                                 _currentDir = commandParts[1];
                             }
                         }
-                        else 
+                        else
                         {
                             if (Directory.Exists(_currentDir + commandParts[1]))
                             {
-                                _currentDir = commandParts[1];
+                                _currentDir += commandParts[1];
 
+                                Console.SetCursorPosition(0, 0);
                             }
                         }
                     }
@@ -148,11 +150,11 @@ namespace FileManager_Popova_POB2312
                 case "tree":
                     if (commandParts.Length == 1)
                     {
-                        DrawTree(1,_currentDir);
+                        DrawTree(1, _currentDir);
                     }
                     else if (commandParts.Length == 3)
                     {
-                        if(commandParts [1] == "-p")
+                        if (commandParts[1] == "-p")
                         {
                             DrawTree(int.Parse(commandParts[2]), _currentDir);
                         }
@@ -162,27 +164,27 @@ namespace FileManager_Popova_POB2312
 
             UpdateConsole();
         }
+
         public static void CommandInputProcess()
         {
             StringBuilder command = new StringBuilder();
 
             char pressedKey;
 
-            int savedLeftPosision = Console.CursorLeft;
+            int savedLeftPosition = Console.CursorLeft;
 
             do
             {
-                pressedKey = Console.ReadKey().KeyChar;
+                pressedKey = Console.ReadKey().KeyChar; // Символ, который ввели
 
-                ConsoleKey key = (ConsoleKey)pressedKey;
+                ConsoleKey key = (ConsoleKey)pressedKey; // И значение клавиши, которую нажали
+
                 int left = Console.CursorLeft;
                 int top = Console.CursorTop;
 
                 if (key == ConsoleKey.Backspace)
                 {
-
-
-                    if (left < savedLeftPosision)
+                    if (left < savedLeftPosition)
                     {
                         Console.Write("$");
                         continue;
@@ -195,8 +197,7 @@ namespace FileManager_Popova_POB2312
                         command.Remove(command.Length - 1, 1);
                     }
                 }
-
-                else if (left == WINDOW_WIDTH - 2)
+                else if (left == WINDOW_WIDTH - 1)
                 {
                     Console.SetCursorPosition(left - 1, top);
                     Console.Write(" ");
@@ -207,13 +208,11 @@ namespace FileManager_Popova_POB2312
                     command.Append(pressedKey);
                 }
 
-            }
-            while ((ConsoleKey)pressedKey != ConsoleKey.Enter);
+            } while ((ConsoleKey)pressedKey != ConsoleKey.Enter);
 
-            command.Remove(command.Length-1, 1);
+            command.Remove(command.Length - 1, 1);
 
             CommandParser(command.ToString());
-
         }
 
         public static void DrawInputCommandField(string currentDir, int left, int top, int width, int height)
@@ -222,7 +221,6 @@ namespace FileManager_Popova_POB2312
 
             Console.SetCursorPosition(1, 34);
             Console.Write($"{currentDir}$");
-
         }
 
         public static void DrawConsole(int left, int top, int width, int height)

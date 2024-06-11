@@ -151,7 +151,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson31(DZ) - List", "Less
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManager_Popova_POB2312", "FileManager_Popova_POB2312\FileManager_Popova_POB2312.csproj", "{BE7CECA0-E231-49D6-90E3-910A9AC79870}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson33-2(DZ)", "Lesson33-2(DZ)\Lesson33-2(DZ).csproj", "{755764A5-8911-4453-831A-20C9E95A80F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson33-2(DZ)", "Lesson33-2(DZ)\Lesson33-2(DZ).csproj", "{755764A5-8911-4453-831A-20C9E95A80F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson31-2(DZ)", "Lesson31-2(DZ)\Lesson31-2(DZ).csproj", "{FE9A61C3-7D06-4DE0-9C70-CDF456CF7929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -459,6 +461,10 @@ Global
 		{755764A5-8911-4453-831A-20C9E95A80F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{755764A5-8911-4453-831A-20C9E95A80F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{755764A5-8911-4453-831A-20C9E95A80F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9A61C3-7D06-4DE0-9C70-CDF456CF7929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9A61C3-7D06-4DE0-9C70-CDF456CF7929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9A61C3-7D06-4DE0-9C70-CDF456CF7929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9A61C3-7D06-4DE0-9C70-CDF456CF7929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
