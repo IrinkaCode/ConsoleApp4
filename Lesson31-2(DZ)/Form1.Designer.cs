@@ -42,7 +42,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 291);
+            textBox1.Location = new Point(12, 316);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(218, 49);
@@ -78,9 +78,9 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(193, 371);
+            btnSearch.Location = new Point(247, 442);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(308, 65);
+            btnSearch.Size = new Size(206, 67);
             btnSearch.TabIndex = 4;
             btnSearch.Text = "Поиск";
             btnSearch.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(236, 291);
+            textBox2.Location = new Point(236, 316);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(207, 49);
@@ -111,7 +111,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(449, 291);
+            textBox3.Location = new Point(449, 316);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(221, 49);
