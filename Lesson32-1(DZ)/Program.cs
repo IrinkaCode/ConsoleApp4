@@ -1,5 +1,5 @@
 ﻿
-string defaultPath = "C:\\Users\\pil02\\Desktop\\Irina";
+string defaultPath = "C:\\Users\\pil02\\Desktop\\Irina";//путь ккорневой папке
 PrintDirectory(new DirectoryInfo(defaultPath),"",true);
 static void PrintDirectory(DirectoryInfo directory,string indent,bool LastDirectory)
 {
