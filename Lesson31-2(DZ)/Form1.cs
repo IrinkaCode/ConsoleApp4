@@ -55,11 +55,11 @@ namespace Lesson31_2_DZ_
         private void btnRemove_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
-            CalendarEvent eventToRemove = events.Find(e => e.Name == name);
+            CalendarEvent btnRemove = events.Find(e => e.Name == name)!;
 
-            if (eventToRemove != null)
+            if (btnRemove != null)
             {
-                events.Remove(eventToRemove);
+                events.Remove(btnRemove);
                 UpdateEventsList();
                 ClearInputFields();
             }
