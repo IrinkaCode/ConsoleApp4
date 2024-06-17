@@ -16,12 +16,12 @@ namespace Lesson28_4_DZ_
         private void button1_Click(object sender, EventArgs e)
         {
             string filePath = textBox1.Text;
-            FileInfo file = new FileInfo(filePath);
-            string text = File.ReadAllText(filePath);
-            string[] textSort = text.Split('\n');
-            foreach (string s in textSort)
+           
+            string[] text = File.ReadAllLines(filePath);
+            
+            for(int i = 0; i < text.Length; i++ )
             {
-                listBox1.Items.Add(s);
+                listBox1.Items.Add(text[i]);
             }
         }
     }

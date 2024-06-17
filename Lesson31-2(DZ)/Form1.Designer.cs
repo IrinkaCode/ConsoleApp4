@@ -35,14 +35,12 @@
             btnSearch = new Button();
             dateTimePicker1 = new DateTimePicker();
             textBox2 = new TextBox();
-            listBox2 = new ListBox();
             textBox3 = new TextBox();
-            listBox3 = new ListBox();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 316);
+            textBox1.Location = new Point(235, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(218, 49);
@@ -88,42 +86,26 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(18, 535);
+            dateTimePicker1.Location = new Point(247, 234);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(199, 27);
             dateTimePicker1.TabIndex = 5;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(236, 316);
+            textBox2.Location = new Point(236, 87);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(207, 49);
+            textBox2.Size = new Size(218, 49);
             textBox2.TabIndex = 8;
-            // 
-            // listBox2
-            // 
-            listBox2.FormattingEnabled = true;
-            listBox2.Location = new Point(236, 12);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(207, 264);
-            listBox2.TabIndex = 6;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(449, 316);
+            textBox3.Location = new Point(236, 153);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(221, 49);
             textBox3.TabIndex = 9;
-            // 
-            // listBox3
-            // 
-            listBox3.FormattingEnabled = true;
-            listBox3.Location = new Point(449, 12);
-            listBox3.Name = "listBox3";
-            listBox3.Size = new Size(221, 264);
-            listBox3.TabIndex = 7;
             // 
             // Form1
             // 
@@ -132,8 +114,6 @@
             ClientSize = new Size(689, 566);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
-            Controls.Add(listBox3);
-            Controls.Add(listBox2);
             Controls.Add(dateTimePicker1);
             Controls.Add(btnSearch);
             Controls.Add(listBox1);
@@ -155,8 +135,6 @@
         private Button btnSearch;
         private DateTimePicker dateTimePicker1;
         private TextBox textBox2;
-        private ListBox listBox2;
         private TextBox textBox3;
-        private ListBox listBox3;
     }
 }
