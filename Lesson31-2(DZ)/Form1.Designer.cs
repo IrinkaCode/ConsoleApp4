@@ -35,12 +35,11 @@
             btnSearch = new Button();
             dateTimePicker1 = new DateTimePicker();
             textBox2 = new TextBox();
-            textBox3 = new TextBox();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(235, 12);
+            textBox1.Location = new Point(404, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(218, 49);
@@ -71,8 +70,9 @@
             listBox1.FormattingEnabled = true;
             listBox1.Location = new Point(12, 12);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(218, 264);
+            listBox1.Size = new Size(365, 404);
             listBox1.TabIndex = 3;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // btnSearch
             // 
@@ -86,33 +86,24 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(247, 234);
+            dateTimePicker1.Location = new Point(404, 231);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(199, 27);
             dateTimePicker1.TabIndex = 5;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(236, 87);
+            textBox2.Location = new Point(404, 84);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(218, 49);
             textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(236, 153);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(221, 49);
-            textBox3.TabIndex = 9;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(689, 566);
-            Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(dateTimePicker1);
             Controls.Add(btnSearch);
@@ -135,6 +126,5 @@
         private Button btnSearch;
         private DateTimePicker dateTimePicker1;
         private TextBox textBox2;
-        private TextBox textBox3;
     }
 }

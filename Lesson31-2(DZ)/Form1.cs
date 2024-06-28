@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Lesson31_2_DZ_
@@ -36,8 +37,8 @@ namespace Lesson31_2_DZ_
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
-            DateTime date = DateTimePicker.MaximumDateTime;
-            string description = textBox1.Text;
+            DateTime date = dateTimePicker1.Value;
+            string description = textBox2.Text;
 
             if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(description))
             {
@@ -55,11 +56,11 @@ namespace Lesson31_2_DZ_
         private void btnRemove_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
-            CalendarEvent btnRemove = events.Find(e => e.Name == name)!;
+            CalendarEvent eventToRemove = events.Find(ev => ev.Name == name)!;
 
-            if (btnRemove != null)
+            if (eventToRemove != null)
             {
-                events.Remove(btnRemove);
+                events.Remove(eventToRemove);
                 UpdateEventsList();
                 ClearInputFields();
             }
@@ -71,19 +72,19 @@ namespace Lesson31_2_DZ_
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
             string searchText = textBox1.Text;
-            List<CalendarEvent> searchResults = events.Where(e =>
-                e.Name.Contains(searchText) ||
-                e.Date.ToString().Contains(searchText) ||
-                e.Description.Contains(searchText)).ToList();
+            List<CalendarEvent> searchResults = events.Where(ev =>
+                ev.Name.Contains(searchText) ||
+                ev.Date.ToString().Contains(searchText) ||
+                ev.Description.Contains(searchText)).ToList();
 
             listBox1.DataSource = searchResults;
             listBox1.DisplayMember = "Name";
-
         }
+
         private void UpdateEventsList()
         {
+            listBox1.DataSource = null;
             listBox1.DataSource = events;
             listBox1.DisplayMember = "Name";
         }
@@ -91,9 +92,19 @@ namespace Lesson31_2_DZ_
         private void ClearInputFields()
         {
             textBox1.Text = "";
-            textBox1.Text = "";
+            textBox2.Text = "";
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1)
+            {
+                textBox1.Text = events[listBox1.SelectedIndex].Name;
+                textBox2.Text = events[listBox1.SelectedIndex].Description;
+                dateTimePicker1.Value = events[listBox1.SelectedIndex].Date;
+            }
         }
     }
-
 }
+
 
