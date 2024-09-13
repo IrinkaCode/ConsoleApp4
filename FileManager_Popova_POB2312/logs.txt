@@ -1,0 +1,6 @@
+﻿[13.09.2024 17:24:17]
+ОшибкаcreateIndex was outside the bounds of the array.
+
+[13.09.2024 17:26:02]
+ОшибкаmkdirIndex was outside the bounds of the array.
+
