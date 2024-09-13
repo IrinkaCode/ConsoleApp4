@@ -4,3 +4,60 @@
 [13.09.2024 17:26:02]
 ОшибкаmkdirIndex was outside the bounds of the array.
 
+[13.09.2024 17:38:42]
+ОшибкаtouchIndex was outside the bounds of the array.
+
+[13.09.2024 17:38:57]
+ОшибкаtreeAccess to the path 'C:\$Recycle.Bin\S-1-5-18' is denied.
+
+[13.09.2024 17:41:13]
+ОшибкаtreeAccess to the path 'C:\$Recycle.Bin\S-1-5-18' is denied.
+
+[13.09.2024 17:58:12]
+ОшибкаtreeAccess to the path 'C:\$Recycle.Bin\S-1-5-18' is denied.
+
+[13.09.2024 17:59:04]
+Ошибкаls D:\papkaCould not find a part of the path 'D:\papka'.
+
+[13.09.2024 17:59:12]
+Ошибкаls D:\zxcCould not find a part of the path 'D:\zxc'.
+
+[13.09.2024 17:59:47]
+Ошибкаls D:\zxcCould not find a part of the path 'D:\zxc'.
+
+[13.09.2024 18:01:18]
+Ошибкаls D:\zxc.txtПараметр задан неверно. : 'D:\zxc.txt'
+
+[13.09.2024 18:01:47]
+ОшибкаtreeAccess to the path 'C:\$Recycle.Bin\S-1-5-18' is denied.
+
+[13.09.2024 18:02:23]
+ОшибкаmkdirIndex was outside the bounds of the array.
+
+[13.09.2024 18:12:17]
+ОшибкаtreeAccess to the path 'C:\$Recycle.Bin\S-1-5-18' is denied.
+
+[13.09.2024 22:19:29]
+ОшибкаtreeAccess to the path 'C:\$Recycle.Bin\S-1-5-18' is denied.
+
+[13.09.2024 22:25:38]
+ОшибкаtreeAccess to the path 'C:\$Recycle.Bin\S-1-5-18' is denied.
+
+[13.09.2024 22:31:00]
+ОшибкаtreeAccess to the path 'C:\Users\All Users\Application Data' is denied.
+
+[13.09.2024 22:31:33]
+ОшибкаtreeAccess to the path 'C:\Users\All Users\Application Data' is denied.
+
+[13.09.2024 22:53:52]
+ОшибкаtreeAccess to the path 'C:\Users\All Users\Application Data' is denied.
+
+[13.09.2024 22:56:22]
+ОшибкаtreeAccess to the path 'C:\Users\All Users\Application Data' is denied.
+
+[13.09.2024 23:01:09]
+ОшибкаtreeAccess to the path 'C:\Users\All Users\Application Data' is denied.
+
+[13.09.2024 23:09:38]
+ОшибкаtreeAccess to the path 'C:\Users\All Users\Application Data' is denied.
+
